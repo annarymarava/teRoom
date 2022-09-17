@@ -1,0 +1,50 @@
+.wr-registering{
+    padding: 186px 0;
+}
+.registering{
+    background: #33A1FB;
+    border-radius: 60px;
+    padding: 71px 74px;
+    position: relative;
+
+}
+.registering h3{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    color: #ffffff;
+}
+.registering p{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 16px;
+}
+.registering input{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 52px;
+    padding: 10px 12px;
+    margin-right: 20px;
+
+}
+.registr-btn{
+    background: #F9D208;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 7px;
+    color: #ffffff;
+    border: none;
+
+}
+.registering-room{
+    position: absolute;
+    left: 65.5%;
+    right: 45.52%;
+    top: -10%;
+    bottom: 22.24%;
+}

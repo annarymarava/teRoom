@@ -1,0 +1,37 @@
+.wr-platform{
+
+}
+.wr-platform h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #1E3147;
+}
+.wr-platform-card{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+.platform-card{
+    max-width: 320px;
+    padding: 42px 45px 34px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.platform-card h3{
+    margin-top: 29px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+
+}
+.platform-card p{
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+
+
+}

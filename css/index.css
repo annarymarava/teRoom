@@ -2,6 +2,8 @@
 @import 'preview.css';
 @import 'describes.css';
 @import 'steps.css';
+@import "registering.css";
+@import "platform.css";
 
 
 
@@ -15,6 +17,9 @@ body {
 
 button {
   cursor: pointer;
+}
+ul{
+  list-style: none;
 }
 
 * {
