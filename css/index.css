@@ -1,11 +1,16 @@
 @import 'fonts.css';
 @import 'preview.css';
 @import 'describes.css';
+@import 'steps.css';
+
 
 
 h1, h1, h3, h4, h5{
   margin: 0;
   padding: 0;
+}
+body {
+  overflow-x: hidden;
 }
 
 button {
@@ -22,6 +27,22 @@ button {
   margin: 0 auto;
   box-sizing: border-box;
 }
+.container-title-custom {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 110px;
+  padding-bottom: 90px;
+  text-align: center;
+}
+
+.container-title-custom h2 {
+  font-family: 'GeometriaBold', sans-serif;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: #1E3147;
+}
+
 
 .common-btn-md {
   background-color: #33A1FB;
@@ -72,4 +93,25 @@ button {
   border-radius: 50%;
   opacity: 0.8;
   border: 1px dashed #1E3147;
+}
+
+.plus-icon  {
+  position: absolute;
+}
+.plus-icon  .vertical{
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.plus-icon  .horizontal{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.circle-icon {
+  position: absolute;
+  border-radius: 50%;
 }

@@ -1,0 +1,126 @@
+.wr-steps {
+  background-image: url("../media/steps/bg_ellipse.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+
+.wr-steps-plus {
+  filter: blur(3px);
+  transform: rotate(-29.17deg);
+  top: 35%;
+  left: -19px;
+  width: 80px;
+  height: 80px;
+}
+.wr-steps-plus div{
+  background-color: #33A1FB;
+}
+
+.wr-steps-plus-vertical {
+  width: 12px;
+  height: 80px;
+}
+.wr-steps-plus-horizontal {
+  width: 80px;
+  height: 12px;
+}
+
+.wr-steps-circle-border {
+  width: 117px;
+  height: 117px;
+  border: 6px solid #33A1FB;
+  filter: blur(3px);
+  top: 50%;
+  right: 0;
+  transform: translate(50%,-50%);
+}
+.wr-steps-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #33A1FB;
+}
+
+.wr-steps .wr-steps-circle:nth-child(3) {
+  right: 0;
+  bottom: 14px;
+  z-index: -1;
+}
+
+.wr-steps .wr-steps-circle:nth-child(2) {
+  left: 57%;
+  top: 67%;
+  z-index: -1;
+}
+.wr-steps-dashed-circle {
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wr-steps-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+.wr-steps-step:nth-child(2) {
+flex-direction: row-reverse;
+}
+
+.wr-steps-step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wr-steps-describe {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  align-items: start;
+  justify-content: center;
+  height: max-content;
+  max-width: 500px;
+
+}
+
+.wr-steps-describe h3 {
+  font-family: 'GeometriaMedium', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1E3147;
+}
+
+.wr-steps-describe p {
+  font-family: 'GeometriaRegular', sans-serif;
+  font-size: 19px;
+  line-height: 28px;
+  color: #1E3147;
+}
+
+.wr-steps-describe img {
+  position: absolute;
+  top:0;
+  transform: translateX(-150%);
+}
+
+.wr-steps-img {
+  position: relative;
+}
+
+.wr-steps-img img:nth-child(2) {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  transform: translateX(45%);
+}
+
+.wr-steps-step:nth-child(3) .wr-steps-img img:nth-child(2) {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  transform: translateX(-45%);
+}
