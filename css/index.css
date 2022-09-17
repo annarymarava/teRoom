@@ -1,0 +1,75 @@
+@import 'fonts.css';
+@import 'preview.css';
+@import 'describes.css';
+
+
+h1, h1, h3, h4, h5{
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-custom {
+  max-width: 1460px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.common-btn-md {
+  background-color: #33A1FB;
+  box-shadow: 0px 10px 15px -6px rgba(51, 161, 251, 0.5);
+  border-radius: 29px;
+  font-family: "GeometriaRegular", sans-serif ;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 20px;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+.common-btn-lg {
+  background-color: #33A1FB;
+  box-shadow: 0px 10px 15px -6px rgba(51, 161, 251, 0.5);
+  border-radius: 29px;
+  font-family: "GeometriaRegular", sans-serif ;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 18px 28px;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.underline-btn {
+  background-color: transparent;
+  font-family: "GeometriaRegular", sans-serif ;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 2px 0;
+  color: #33A1FB;
+  border-bottom: 1px dashed #33A1FB;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  outline: none;
+}
+
+.dashed-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  border: 1px dashed #1E3147;
+}

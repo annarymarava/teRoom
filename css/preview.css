@@ -1,0 +1,98 @@
+.wr-preview {
+  background-image: url("../media/preview/bg_img.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.header-link {
+  font-family: 'GeometriaRegular', sans-serif;
+  font-size: 16px;
+  line-height: 12px;
+  color: #99A3C5;
+  text-decoration: none;
+  padding: 30px;
+}
+
+.wr-home {
+  position: relative;
+  padding: 160px 0;
+  display: flex;
+  gap: 315px;
+}
+
+.home-title {
+  font-family: 'GeometriaBold', sans-serif;
+  font-size: 48px;
+  line-height: 60px;
+  color: #1E3147;
+}
+.home-describe {
+  font-family: 'GeometriaRegular', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1E3147;
+  margin-top: 30px;
+}
+
+.wr-home-text {
+  max-width: 560px;
+}
+
+.wr-home-btn {
+  margin-top: 100px;
+  display: flex;
+  gap: 57px;
+  align-items: center;
+}
+
+.wr-home-image {
+  position: relative;
+  width: 100%;
+}
+
+.wr-home-image img {
+  position: absolute;
+}
+.wr-home-image img:nth-child(1) {
+ bottom: -1%;
+  right: -10%;
+}
+.wr-home-image img:nth-child(2) {
+  top: 50%;
+  transform: translateY(-70%);
+  left: -20%;
+
+}
+.wr-home-image img:nth-child(3) {
+  top: -17%;
+  right: 12%;
+}
+.wr-home-image img:nth-child(4) {
+  right: 0;
+  top: -30%;
+}
+.wr-home-image img:nth-child(5) {
+top: -30%;
+}
+.wr-home-image img:nth-child(6) {
+  right: 0;
+  top: 50%;
+  transform: translate(-70%, -70%);
+}
+
+
+

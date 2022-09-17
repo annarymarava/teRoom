@@ -1,0 +1,43 @@
+.wr-describes {
+padding: 65px 364px 120px 364px;
+}
+
+.wr-describes-cards {
+  padding: 36px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  background-color: #F8F9FC;
+  border-radius: 20px;
+}
+
+.wr-describes-card {
+  background-color: #fff;
+  border-radius: 13px;
+  padding: 23px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wr-describes-card div {
+max-height: 45px;
+
+}
+.wr-describes-card p {
+  font-family: 'GeometriaMedium', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #1E3147;
+  margin-top: 8px;
+}
+.wr-describes-card span {
+  font-family: 'GeometriaRegular', sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #1E3147;
+  margin-top: 5px;
+}
+
