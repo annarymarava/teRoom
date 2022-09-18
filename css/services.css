@@ -1,0 +1,75 @@
+
+.services {
+    padding-top: 204px;
+
+}
+.services h2{
+    text-align: center;
+}
+.services span {
+    text-align: center;
+    background: darkorange;
+}
+.services-logo{
+    position: relative;
+    display: block;
+}
+
+.logo-teroom{
+    position: absolute;
+    left: 408px;
+    top: 260px;
+}
+.logo-telegram{
+    position: absolute;
+    left: 73.47%;
+border-radius: 50%;
+    background: #33A1FB;
+    top: 276px;
+}
+.logo-autocad{
+    position: absolute;
+    left: 775.23px;
+    top: 196px;
+}
+.logo-3dsmax{
+    position: absolute;
+    left: 1157.2px;
+    top: 110px;
+}
+.logo-cloud{
+    position: absolute;
+    left: 1037.26px;
+    top: 172px;
+}
+.logo-exel{
+    position: absolute;
+    left: 1342.57px;
+    top: 156px;
+}
+.logo-gmail{
+    position: absolute;
+    left: 1396.25px;
+    top: 408px;
+}
+.logo-lr{
+    position: absolute;
+    left: 925.7px;
+    top: 245px;
+}
+.logo-photoshop{
+    position: absolute;
+    left: 1048.16px;
+    top: 282px;
+}
+.logo-watsap{
+    position: absolute;
+    left: 895.5px;
+    top: 130px;
+}
+.logo-m\.word{
+    position: absolute;
+    left: 1434px;
+    top: 250px;
+
+}
