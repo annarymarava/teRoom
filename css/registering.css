@@ -1,75 +1,76 @@
 .wr-registering{
     padding-top: 224px;
+    padding-bottom: 72px;
 }
-.registering{
+.wr-registering-title{
     background: #33A1FB;
     border-radius: 60px;
     padding: 71px 74px;
     position: relative;
-
+    margin-right: 32px;
 }
 
-.registering h3{
+.wr-registering-title h3{
+    font-family: 'GeometriaBold', sans-serif;
     font-size: 40px;
-    font-weight: 700;
     text-align: left;
     color: #ffffff;
 }
-.registering p{
+.wr-registering-title p{
+    font-family: "GeometriaRegular", sans-serif;
     font-size: 20px;
-    font-weight: 400;
     text-align: left;
     color: #ffffff;
     margin-top: 16px;
 }
-.registering input{
-    font-family: "GeometriaMedium";
+.wr-registering-title input{
+    font-family: "GeometriaMedium", sans-serif;
     font-size: 18px;
     text-align: left;
-    padding: 10px 12px;
+    padding: 18px 12px;
     margin-right: 20px;
     border-radius: 10px;
     background: #F8F9FC;
     border: none;
-
+    color: #99A3C5;
 }
-.field{
+
+.wr-registering-title input::placeholder{
+    font-family: "GeometriaMedium", sans-serif;
+    font-size: 18px;
+    text-align: left;
+    color: #99A3C5;
+}
+.wr-registering-fields{
     margin-top: 52px;
 }
-.registr-btn{
-    font-family: GeometriaBold;
-    background: #F9D208;
+.wr-registering-fields button{
+    font-family: "GeometriaBold", sans-serif;
+    background-color: #F9D208;
     border-radius: 10px;
     text-align: center;
-    padding: 18px 7px;
+    padding: 18px;
     color: #ffffff;
     border: none;
     font-size: 20px;
-
+    line-height: 24px;
 }
-.registering-room{
+.wr-registering-room{
     position: absolute;
-    left: 69%;
-    top: -10%;
-    bottom: 22.24%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -60px;
 }
-.registering-checkbox{
+.wr-registering-checkbox{
     margin-top: 29px;
 }
-.registering-checkbox form{
+.wr-registering-checkbox form{
     margin-top: 11px;
     color: #ffffff;
-    font-family: "GeometriaRegular";
+    font-family: "GeometriaRegular", sans-serif;
     font-size: 13px;
 }
-.registering-checkbox span{
+.wr-registering-checkbox span{
     color: rgba(254, 209, 1, 1);
     text-decoration: underline dotted;
-
-}
-.check{
-    margin-top: 40px;
-}
-.check1{
-    margin-top: 11px;
 }
