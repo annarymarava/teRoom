@@ -1,5 +1,5 @@
 .wr-registering{
-    padding: 186px 0;
+    padding-top: 186px;
 }
 .registering{
     background: #33A1FB;
@@ -8,6 +8,7 @@
     position: relative;
 
 }
+
 .registering h3{
     font-size: 40px;
     font-weight: 700;
@@ -22,29 +23,31 @@
     margin-top: 16px;
 }
 .registering input{
+    font-family: "GeometriaMedium";
     font-size: 18px;
-    font-weight: 500;
     text-align: left;
     margin-top: 52px;
     padding: 10px 12px;
     margin-right: 20px;
+    border-radius: 10px;
+    background: #F8F9FC;
+    border: none;
 
 }
 .registr-btn{
+    font-family: GeometriaBold;
     background: #F9D208;
     border-radius: 10px;
-    font-size: 20px;
-    font-weight: 700;
     text-align: center;
-    padding: 10px 7px;
+    padding: 18px 7px;
     color: #ffffff;
     border: none;
+    font-size: 20px;
 
 }
 .registering-room{
     position: absolute;
-    left: 65.5%;
-    right: 45.52%;
+    left: 69%;
     top: -10%;
     bottom: 22.24%;
 }
