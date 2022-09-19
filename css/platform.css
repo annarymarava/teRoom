@@ -10,7 +10,6 @@
 .wr-platform-card{
     display: flex;
     justify-content: space-between;
-    padding-top: 90px;
 }
 .platform-card{
     max-width: 320px;
