@@ -122,3 +122,8 @@ ul{
   position: absolute;
   border-radius: 50%;
 }
+.wr-common-bg {
+  background-image: url("../media/platform/common_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
