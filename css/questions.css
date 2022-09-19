@@ -1,0 +1,34 @@
+.wr-questions h2{
+    font-family: "GeometriaBold";
+    font-size: 48px;
+    color: #1E3147;
+    text-align: center;
+    padding-top: 76px;
+}
+.questions{
+    display: flex;
+    justify-content: space-between;
+
+}
+.questions-add{
+    padding: 18px 36px 14px 19px;
+    margin-top: 60px;
+}
+.questions-add h3{
+    font-family: "GeometriaMedium";
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #1E3147;
+    margin: 18px 0;
+}
+.questions-add p{
+    font-family: "GeometriaRegular";
+    font-size: 16px;
+    line-height: 150%;
+    color: #1E3147;
+}
+.questions-image{
+    padding: 76px 60px 133px 0;
+}

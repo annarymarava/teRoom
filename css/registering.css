@@ -1,5 +1,5 @@
 .wr-registering{
-    padding-top: 186px;
+    padding-top: 224px;
 }
 .registering{
     background: #33A1FB;
@@ -26,13 +26,15 @@
     font-family: "GeometriaMedium";
     font-size: 18px;
     text-align: left;
-    margin-top: 52px;
     padding: 10px 12px;
     margin-right: 20px;
     border-radius: 10px;
     background: #F8F9FC;
     border: none;
 
+}
+.field{
+    margin-top: 52px;
 }
 .registr-btn{
     font-family: GeometriaBold;
@@ -50,4 +52,24 @@
     left: 69%;
     top: -10%;
     bottom: 22.24%;
+}
+.registering-checkbox{
+    margin-top: 29px;
+}
+.registering-checkbox form{
+    margin-top: 11px;
+    color: #ffffff;
+    font-family: "GeometriaRegular";
+    font-size: 13px;
+}
+.registering-checkbox span{
+    color: rgba(254, 209, 1, 1);
+    text-decoration: underline dotted;
+
+}
+.check{
+    margin-top: 40px;
+}
+.check1{
+    margin-top: 11px;
 }

@@ -1,0 +1,81 @@
+.wr-problems{
+    padding-top: 180px;
+}
+.wr-problems h2{
+    font-family: "GeometriaBold";
+    font-size: 48px;
+    text-align: center;
+    color: #1E3147;
+}
+.problem-image{
+    padding: 67px 175px 85px 396px;
+}
+.problems{
+    display: flex;
+    position: relative;
+
+}
+.feedback{
+    display: block;
+    text-align: center;
+    margin-top: 99px;
+    background: #FFFFFF;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    max-width: 410px;
+    max-height: 458px;
+}
+.feedback h4{
+    margin-top: 55px;
+    font-family: "GeometriaMedium";
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #1E3147;
+}
+.feedback p{
+    font-family: "GeometriaRegular";
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #1E3147;
+    margin-top: 10px;
+    margin-bottom: 26px;
+}
+.feedback-data input{
+    font-family: "GeometriaMedium";
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: #99A3C5;
+    background: #F5F7F9;
+    border-radius: 10px;
+    border: none;
+
+}
+.data-feedback{
+    padding: 12px 130px 13px 24px;
+    max-width: 286px;
+    margin-top: 16px;
+}
+.feedback-data-description{
+    padding: 12px 130px 53px 24px;
+    max-width: 286px;
+    margin-top: 16px;
+}
+.feedback button{
+    font-family: "GeometriaBold";
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 11px 12px 10px;
+    background: #33A1FB;
+    border-radius: 22px;
+    border: none;
+    margin: 32px 0 58px 0;
+}
+.feedback-image{
+    margin-right: 0;
+    left: 1581px;
+    position: absolute;
+    top: 260px;
+}

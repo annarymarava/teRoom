@@ -6,15 +6,31 @@
 .services h2{
     text-align: center;
 }
-.services span {
-    text-align: center;
-    background: darkorange;
-}
 .services-logo{
     position: relative;
     height: 628px;
 }
-
+.using{
+    display: flex;
+    justify-content: center;
+}
+.using__before{
+    padding: 13px 8px 12px 25px;
+    font-family: "GeometriaRegular";
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #33A1FB;
+    border-radius: 47px 0 0 47px;
+}
+.using__after{
+    font-family: "GeometriaRegular";
+    font-size: 20px;
+    color: #788CA1;
+    padding: 12px 13px 12px 24px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 0 47px 47px 0 ;
+}
 .logo-teroom{
     position: absolute;
     left: 408px;
@@ -22,9 +38,7 @@
 }
 .logo-telegram{
     position: absolute;
-    left: 73.47%;
-border-radius: 50%;
-    background: #33A1FB;
+    left: 1257.02px;
     top: 276px;
 }
 .logo-autocad{

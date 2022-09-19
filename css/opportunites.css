@@ -1,14 +1,82 @@
+
 .opportunites h2{
     font-size: 48px;
     font-weight: 700;
     text-align: center;
 
 }
-.projects{
+.projects-img{
     position: relative;
+    margin-top: 100px;
 }
 .projects-girl{
     position: absolute;
     left: -65px;
     top: 245px;
+}
+.opportunites-tabs{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.opportunites-tabs img{
+    padding:10px 7px 14px 25px;
+}
+.opportunites-tabs span{
+    padding: 7px 24px 7px 0;
+    font-family: "GeometriaRegular";
+    font-size: 16px;
+    color: #99A3C5;
+    align-self: center;
+}
+.opportunites-tabs li:active{
+    background: #33A1FB;
+    opacity: 0.2;
+}
+.opportunites-tabs li{
+    background: #F8F9FC;
+    border-radius: 25px;
+    display: flex;
+    letter-spacing: 0.01em;
+}
+.comment{
+    position: absolute;
+    left: 190px;
+    top: 493px;
+}
+.projects {
+display: flex;
+    justify-content: space-between;
+}
+.project-text {
+    margin-top: 192px;
+}
+.project-text span{
+    font-family: "GeometriaMedium";
+    font-size: 32px;
+    color: #1E3147;
+}
+.project-text p{
+    font-family: "GeometriaRegular";
+    font-size: 19px;
+    line-height: 24px;
+    color: #1E3147;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.project-text-new{
+    display: block;
+    margin-top: 48px;
+
+}
+.project-text-new span{
+    font-family: "GeometriaRegular";
+    font-size: 17px;
+    line-height: 21px;
+    color: #1E3147;
+    margin-left: 25px;
+
+}
+.project-text-new img{
+    margin-top: 29px;
 }

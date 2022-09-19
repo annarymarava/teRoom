@@ -1,0 +1,26 @@
+.develoment{
+    padding-top: 240px;
+    display: flex;
+    justify-content: space-between;
+    gap: 277px;
+}
+.develoment-designe{
+    padding-top: 256px;
+}
+.develoment-image{
+    padding-top: 240px;
+}
+.develoment-designe h3{
+    font-family: "GeometriaBold";
+    font-size: 45px;
+    line-height: 57px;
+    color: #1E3147;
+
+}
+.develoment-designe p{
+    margin-top: 50px;
+    font-family: "GeometriaRegular";
+    font-size: 20px;
+    line-height: 25px;
+    color: #1E3147;
+}
