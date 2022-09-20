@@ -8,16 +8,29 @@
     color: #1E3147;
 }
 .wr-platform-card{
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    min-height: 356px;
 }
 .platform-card{
     max-width: 320px;
     padding: 42px 45px 34px;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    position: relative;
 }
+.platform-card:nth-child(2){
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.platform-card:nth-child(4){
+    position: absolute;
+    right: 0;
+}
+
 .platform-card h3{
     font-family: "GeometriaBold", sans-serif;
     margin-top: 29px;
@@ -33,6 +46,22 @@
     font-weight: 400;
     line-height: 23px;
     text-align: left;
+}
 
+.wr-platform-dashed-circle {
+    width: 31px;
+    height: 31px;
+    right: 0;
+    top: 0;
+    transform: translate(33%, -17%);
+    z-index: -1;
+}
 
+.wr-platform-circle-icon {
+    background-color: #33A1FB;
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
 }

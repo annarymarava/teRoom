@@ -5,7 +5,7 @@
 .wr-registering-title{
     background: #33A1FB;
     border-radius: 60px;
-    padding: 71px 74px;
+    padding: 71px 74px 64px 74px;
     position: relative;
     margin-right: 32px;
 }
@@ -65,12 +65,32 @@
     margin-top: 29px;
 }
 .wr-registering-checkbox form{
-    margin-top: 11px;
     color: #ffffff;
     font-family: "GeometriaRegular", sans-serif;
     font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .wr-registering-checkbox span{
     color: rgba(254, 209, 1, 1);
     text-decoration: underline dotted;
+}
+.wr-registering-dashed-circle-big {
+    width: 122px;
+    height: 122px;
+    top: 0;
+    left: 0;
+    transform: translate(-33%, -33%);
+    z-index: -1;
+}
+
+.wr-registering-dashed-circle-small {
+    width: 69px;
+    height: 69px;
+    bottom: 0;
+    right: 0;
+    transform: translate(105%, 20%);
+    z-index: -1;
+
 }

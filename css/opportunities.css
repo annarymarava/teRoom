@@ -1,0 +1,96 @@
+.wr-opportunities-title {
+    padding-bottom: 60px;
+}
+.wr-opportunities-projects-img{
+    position: relative;
+}
+.wr-opportunities-projects-img img:nth-child(2){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-30%, -22%);
+}
+.wr-opportunities-projects-img img:nth-child(3){
+    position: absolute;
+    left: 190px;
+    top: 493px;
+}
+.wr-opportunities-tabs{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 100px;
+}
+.wr-opportunities-tabs span{
+    padding: 7px 24px 7px 0;
+    font-family: "GeometriaRegular", sans-serif;
+    font-size: 16px;
+    color: #99A3C5;
+    align-self: center;
+}
+.wr-opportunities-tabs li{
+    background-color: #F8F9FC;
+    border-radius: 25px;
+    display: flex;
+    letter-spacing: 0.01em;
+}
+.wr-opportunities-tabs li svg{
+    padding:10px 7px 14px 25px;
+    fill: #99A3C5;
+}
+.wr-opportunities-tabs li.active{
+    background-color: #D6ECFE;
+}
+.wr-opportunities-tabs li.active span{
+    color: #157ED4;
+}
+.wr-opportunities-tabs li.active svg{
+    fill: #157ED4;
+}
+.wr-opportunities-projects {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.wr-opportunities-project-text {
+    padding: 100px 0 120px 0;
+}
+.wr-opportunities-project-text span{
+    font-family: "GeometriaMedium", sans-serif;
+    font-size: 32px;
+    color: #1E3147;
+    margin-left: 12px;
+}
+.wr-opportunities-project-text p{
+    font-family: "GeometriaRegular", sans-serif;
+    font-size: 19px;
+    line-height: 24px;
+    color: #1E3147;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.wr-opportunities-project-text-new{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 48px;
+}
+
+.wr-opportunities-project-text-new div{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.wr-opportunities-project-text-new span{
+    font-family: "GeometriaRegular", sans-serif;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1E3147;
+}
+.wr-opportunities-dashed-circle {
+    width: 136px;
+    height: 136px;
+    transform: translate(-4%, -17%);
+    z-index: -1;
+}
