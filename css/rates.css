@@ -1,12 +1,135 @@
 .wr-rates{
-    margin-top: 220px;
+    background: #F8F9FC;
+    border-radius: 66px;
+    margin-top: 180px;
+}
+.rates-subtitle{
+    font-family: "GeometriaRegular";
+    font-size: 24px;
+    color: #1E3147;
+    text-align: center;
+    margin-top: 10px;
+    padding: 22.5px 0;
 }
 .rates{
     padding: 75px 150px;
+    display: flex;
 }
 .rates-title{
     font-family: "GeometriaBold";;
     font-size: 48px;
     text-align: center;
     color: #1E3147;
+}
+.rates-functions{
+    margin-top: 175px;
+}
+.rates-functions-list{
+    font-family: "GeometriaMedium";
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    color: #1E3147;
+    padding: 13.5px 0 12.5px ;
+    min-width: 264px;
+}
+.rates-functions li:nth-child(2n){
+    background: #E4E8F4;
+    border-radius: 8px 0 0 8px;
+}
+.rates-free-image{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.rates-kinds ul{
+    text-align: center;
+}
+.rates-free h4{
+    font-family: "GeometriaMedium";
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #1E3147;
+    margin-top: 24px;
+    padding: 5px 0;
+    min-width: 196px;
+}
+.rates-price{
+    font-family: "GeometriaBold";
+    font-size: 30px;
+    letter-spacing: 0.01em;
+    color: #33A1FB;
+    margin-top: 27px;
+    padding: 4px;
+}
+.rates-time{
+    font-family: "GeometriaRegular";
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    color: #788CA1;
+}
+.rates-oldprice{
+    margin-top: 9px;
+    font-family: "GeometriaRegular";
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: #788CA1;
+    text-decoration: line-through;
+}
+.rates-free li{
+    padding: 8px 0 6px 0;
+    border-bottom: 1px solid#EBEFF2;
+    max-width: 70px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.rates-kinds-list{
+    display: flex;
+    gap: 31px;
+}
+.rates-free{
+    border: 2px solid #33A1FB;
+    border-radius: 24px;
+}
+.rates-functions-text{
+    font-family: "GeometriaMedium";
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    color: #1E3147;
+    padding: 13.5px 0 12.5px ;
+    border-bottom: 1px solid#EBEFF2;
+    max-width: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
+.rates-free button{
+    background: #33A1FB;
+    border-radius: 4px;
+    font-family: "GeometriaBold";
+    font-size: 16px;
+    text-align: center;
+    color: #F5F7F9;
+    border: none;
+    padding: 8.5px 16px 7.5px 15px;
+    margin: 40px 0 48px;
+}
+.rates-time{
+    font-family: "GeometriaRegular";
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: #788CA1;
+}
+.rates-payment{
+    background: #33A1FB;
+    border-radius: 75px;
+    font-family: "GeometriaBold";
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    max-width: 1160px;
+    padding: 30px 0 30px;
+    margin: 0 auto;
+    text-align: center;
 }

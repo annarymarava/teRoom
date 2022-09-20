@@ -1,14 +1,14 @@
 .develoment{
-    padding-top: 240px;
     display: flex;
     justify-content: space-between;
     gap: 277px;
+    padding-top: 220px;
 }
 .develoment-designe{
-    padding-top: 256px;
+
 }
 .develoment-image{
-    padding-top: 240px;
+
 }
 .develoment-designe h3{
     font-family: "GeometriaBold";
