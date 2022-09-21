@@ -1,5 +1,17 @@
+
 .wr-opportunities-title {
     padding-bottom: 60px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 110px;
+    text-align: center;
+}
+.wr-opportunities-title h2 {
+    font-family: 'GeometriaBold', sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #1E3147;
 }
 .wr-opportunities-projects-img{
     position: relative;
@@ -53,7 +65,7 @@
     position: relative;
 }
 .wr-opportunities-project-text {
-    padding: 100px 0 120px 0;
+    padding-top: 100px ;
 }
 .wr-opportunities-project-text span{
     font-family: "GeometriaMedium", sans-serif;
@@ -93,4 +105,26 @@
     height: 136px;
     transform: translate(-4%, -17%);
     z-index: -1;
+}
+.wr-opportunities-customer{
+    display: flex;
+    justify-content: center;
+    max-width: 607px;
+background-color: red;
+    border: 2px solid #fdfdfd;
+    border-radius: 20px;
+    margin-left:  188px;
+}
+.wr-opportunities-customer img{
+    padding: 17px 20px 17px 18px;
+
+}
+.wr-opportunities-customer p{
+    align-self: center;
+    align-items: center;
+    font-family: "GeometriaBold";
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #1E3147;
 }

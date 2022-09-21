@@ -128,8 +128,52 @@
     line-height: 30px;
     letter-spacing: 0.01em;
     color: #FFFFFF;
-    max-width: 1160px;
-    padding: 30px 0 30px;
-    margin: 0 auto;
+    padding: 30px 250px 30px;
+    margin: 0 149px;
+    text-align: left;
+}
+.rates-free-one{
+    border: 2px solid #ffffff;
+}
+.rates-free-premium{
+    border: 2px solid #FED56D;
+}
+.rates-free-minibasic{
+    position: relative;
+}
+.rates-free-minibasic:before{
+    position: absolute;
+    content: "-20%";
+    font-family: "GeometriaMedium";
+    font-size: 16px;
+    align-items: center;
     text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    padding: 5px 7px 4px 6px;
+    background-color: #33A1FB;
+    border-radius: 34px;
+    top: -3%;
+    left: 37%;
+}
+.rates-free-premium{
+    position: relative;
+}
+.rates-free-premium:before{
+    position: absolute;
+    content: "-20%";
+    font-family: "GeometriaMedium";
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    padding: 5px 7px 4px 6px;
+    background-color:#FED56D;
+    border-radius: 34px;
+    top: -3%;
+    left: 37%;
+}
+.rates-free-free{
+    color: #ffffff;
 }
