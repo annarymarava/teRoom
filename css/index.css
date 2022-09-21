@@ -116,10 +116,10 @@ input {
 }
 .plus-icon  .vertical{
   position: absolute;
-
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
 }
 .plus-icon  .horizontal{
   position: absolute;

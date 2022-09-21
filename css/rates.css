@@ -1,38 +1,70 @@
 .wr-rates{
-    background: #F8F9FC;
-    border-radius: 66px;
     margin-top: 180px;
 }
+.wr-rates-common {
+    background-color: #F8F9FC;
+    border-radius: 66px;
+    padding: 78px 149px 194px 149px;
+    position: relative;
+}
+.wr-rates-select {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 22px 0;
+    gap: 20px;
+}
+.wr-rates-select select {
+    border-radius: 24px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    color: #33A1FB;
+    font-family: "GeometriaMedium", sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    appearance: none;
+    box-shadow: 0 5px 6px 2px rgba(0,0,0,.04);
+    position: relative;
+    background-image: url('../media/rates/arrow_down.svg');
+    background-position-x: calc(100% - 20px);
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+}
+
+.wr-rates-select select option{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
 .rates-subtitle{
-    font-family: "GeometriaRegular";
+    font-family: "GeometriaRegular", sans-serif;
     font-size: 24px;
     color: #1E3147;
     text-align: center;
-    margin-top: 10px;
-    padding: 22.5px 0;
 }
-.rates{
-    padding: 75px 150px;
+.wr-rates-columns{
     display: flex;
+    margin-top: 52px;
 }
 .rates-title{
-    font-family: "GeometriaBold";;
+    font-family: "GeometriaBold", sans-serif;
     font-size: 48px;
     text-align: center;
     color: #1E3147;
 }
-.rates-functions{
+.wr-rates-functions{
     margin-top: 175px;
 }
-.rates-functions-list{
-    font-family: "GeometriaMedium";
+.wr-rates-functions li{
+    font-family: "GeometriaMedium", sans-serif;
     font-size: 14px;
     letter-spacing: 0.01em;
     color: #1E3147;
-    padding: 13.5px 0 12.5px ;
-    min-width: 264px;
+    padding: 13px 20px;
+    min-width: 270px;
 }
-.rates-functions li:nth-child(2n){
+.wr-rates-functions li:nth-child(2n){
     background: #E4E8F4;
     border-radius: 8px 0 0 8px;
 }
@@ -41,11 +73,11 @@
     flex-direction: column;
 }
 
-.rates-kinds ul{
+.wr-rates-kinds ul{
     text-align: center;
 }
 .rates-free h4{
-    font-family: "GeometriaMedium";
+    font-family: "GeometriaMedium", sans-serif;
     font-size: 20px;
     letter-spacing: 0.01em;
     color: #1E3147;
@@ -54,7 +86,7 @@
     min-width: 196px;
 }
 .rates-price{
-    font-family: "GeometriaBold";
+    font-family: "GeometriaBold", sans-serif;
     font-size: 30px;
     letter-spacing: 0.01em;
     color: #33A1FB;
@@ -62,7 +94,7 @@
     padding: 4px;
 }
 .rates-time{
-    font-family: "GeometriaRegular";
+    font-family: "GeometriaRegular", sans-serif;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0.01em;
@@ -70,7 +102,7 @@
 }
 .rates-oldprice{
     margin-top: 9px;
-    font-family: "GeometriaRegular";
+    font-family: "GeometriaRegular", sans-serif;
     font-size: 12px;
     letter-spacing: 0.01em;
     color: #788CA1;
@@ -82,7 +114,6 @@
     max-width: 70px;
     text-align: center;
     margin: 0 auto;
-
 }
 .rates-kinds-list{
     display: flex;
@@ -91,9 +122,10 @@
 .rates-free{
     border: 2px solid #33A1FB;
     border-radius: 24px;
+    background-color: #fff;
 }
 .rates-functions-text{
-    font-family: "GeometriaMedium";
+    font-family: "GeometriaMedium", sans-serif;
     font-size: 14px;
     letter-spacing: 0.01em;
     color: #1E3147;
@@ -106,31 +138,40 @@
 .rates-free button{
     background: #33A1FB;
     border-radius: 4px;
-    font-family: "GeometriaBold";
+    font-family: "GeometriaBold", sans-serif;
     font-size: 16px;
     text-align: center;
     color: #F5F7F9;
     border: none;
-    padding: 8.5px 16px 7.5px 15px;
+    padding: 9px 16px 8px 15px;
     margin: 40px 0 48px;
 }
 .rates-time{
-    font-family: "GeometriaRegular";
+    font-family: "GeometriaRegular", sans-serif;
     font-size: 12px;
     letter-spacing: 0.01em;
     color: #788CA1;
 }
-.rates-payment{
+.wr-rates-payment{
     background: #33A1FB;
     border-radius: 75px;
-    font-family: "GeometriaBold";
+    font-family: "GeometriaBold", sans-serif;
     font-size: 24px;
     line-height: 30px;
     letter-spacing: 0.01em;
     color: #FFFFFF;
-    padding: 30px 250px 30px;
-    margin: 0 149px;
+    padding: 30px 57px 30px 324px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    position: relative;
+}
+.wr-rates-payment img {
+    position: absolute;
+    left: 56px;
+    top: 50%;
+    transform: translateY(-100%);
 }
 .rates-free-one{
     border: 2px solid #ffffff;
@@ -144,7 +185,7 @@
 .rates-free-minibasic:before{
     position: absolute;
     content: "-20%";
-    font-family: "GeometriaMedium";
+    font-family: "GeometriaMedium", sans-serif;
     font-size: 16px;
     align-items: center;
     text-align: center;
@@ -162,7 +203,7 @@
 .rates-free-premium:before{
     position: absolute;
     content: "-20%";
-    font-family: "GeometriaMedium";
+    font-family: "GeometriaMedium", sans-serif;
     font-size: 16px;
     align-items: center;
     text-align: center;
@@ -176,4 +217,60 @@
 }
 .rates-free-free{
     color: #ffffff;
+}
+.rates-cactus {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(66%);
+}
+.rates-gmail {
+    position: absolute;
+    top: 10%;
+    right: -6%;
+    z-index: -1;
+}
+
+.wr-rates-dashed-circle {
+    width: 56px;
+    height: 56px;
+    left: 0;
+    bottom: 30%;
+    transform: translateX(-50%);
+}
+.wr-rates-plus-bold {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 50%;
+    right: -18px;
+    z-index: -1;
+    transform: rotate(-14.61deg);
+}
+.wr-rates-plus-thin {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -70px;
+    top: 60px;
+    transform: rotate(-45deg);
+}
+.wr-rates-plus-bold div, .wr-rates-plus-thin div{
+    background-color: #33A1FB;
+}
+.wr-rates-plus-bold .wr-rates-plus-vertical {
+    width: 4px;
+    height: 27px;
+}
+.wr-rates-plus-bold .wr-rates-plus-horizontal {
+    height: 4px;
+    width: 27px;
+}
+.wr-rates-plus-thin .wr-rates-plus-vertical {
+    width: 2px;
+    height: 25px;
+}
+.wr-rates-plus-thin .wr-rates-plus-horizontal {
+    height: 2px;
+    width: 25px;
 }

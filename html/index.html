@@ -292,20 +292,39 @@
 </section>
 <section class="wr-rates">
     <div class="container-custom">
-        <h2 class="rates-title">Тарифы</h2>
-        <p class="rates-subtitle">Цены за месяц при покупке:</p>
-        <div class="rates">
-            <div class="rates-functions">
+        <div class="wr-rates-common">
+            <img class="rates-cactus" src="../media/rates/cactus.svg" />
+            <img class="rates-gmail" src="../media/rates/gmail.svg" />
+            <div class="dashed-circle wr-rates-dashed-circle"></div>
+            <div class="plus-icon wr-rates-plus-bold">
+                <div class="vertical wr-rates-plus-vertical"></div>
+                <div class="horizontal wr-rates-plus-horizontal"></div>
+            </div>
+            <div class="plus-icon wr-rates-plus-thin">
+                <div class="vertical wr-rates-plus-vertical"></div>
+                <div class="horizontal wr-rates-plus-horizontal"></div>
+            </div>
+            <h2 class="rates-title">Тарифы</h2>
+       <div class="wr-rates-select">
+           <label class="rates-subtitle">Цены за месяц при покупке:</label>
+           <select>
+               <option value="1">Месяц</option>
+               <option value="6">6 Месяцев</option>
+               <option value="12" selected>Год</option>
+           </select>
+       </div>
+        <div class="wr-rates-columns">
+            <div class="wr-rates-functions">
                 <ul>
-                    <li class="rates-functions-list">Проектов</li>
-                    <li class="rates-functions-list">Хранилище, ГБ</li>
-                    <li class="rates-functions-list">Систематизация работы</li>
-                    <li class="rates-functions-list">Контроль сроков</li>
-                    <li class="rates-functions-list">Коммуникация</li>
-                    <li class="rates-functions-list">Тайм трекинг</li>
+                    <li>Проектов</li>
+                    <li>Хранилище, ГБ</li>
+                    <li>Систематизация работы</li>
+                    <li>Контроль сроков</li>
+                    <li>Коммуникация</li>
+                    <li>Тайм трекинг</li>
                 </ul>
             </div>
-            <div class="rates-kinds">
+            <div class="wr-rates-kinds">
                 <ul class="rates-kinds-list">
                     <li class="rates-free rates-free-one">
                         <h4>Бесплатный</h4>
@@ -316,15 +335,13 @@
                         <p class="rates-functions-text">0.1</p>
                         <div class="rates-free-image">
                             <ul>
-                                <li><img src="../media/rates/Group%201928.svg"></li>
-                                <li><img src="../media/rates/Group%201929.svg"></li>
-                                <li><img src="../media/rates/Group%201928.svg"></li>
-                                <li><img src="../media/rates/Group%201929.svg"></li>
-                                <button>Отправить</button>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <li><img src="../media/rates/cross.svg"></li>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <li><img src="../media/rates/cross.svg"></li>
+                                <button>Выбрать</button>
                             </ul>
                         </div>
-
-
                     </li>
                     <li class="rates-free rates-free-minibasic">
                         <h4>Мини</h4>
@@ -335,16 +352,13 @@
                         <p class="rates-functions-text">5</p>
                         <div class="rates-free-image">
                             <ul>
-                                <li><img src="../media/rates/Group%201928.svg"></li>
-                                <li><img src="../media/rates/Group%201929.svg"></li>
-                                <li><img src="../media/rates/Group%201928.svg"></li>
-                                <li><img src="../media/rates/Group%201929.svg"></li>
-                                <button>Отправить</button>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <button>Выбрать</button>
                             </ul>
-
                         </div>
-
-
                     </li>
                     <li class="rates-free rates-free-minibasic">
                         <h4>Базовый</h4>
@@ -355,18 +369,18 @@
                         <p class="rates-functions-text">20</p>
                         <div class="rates-free-image">
                             <ul>
-                                <li><img src="../media/rates/Group%201928.svg"></li>
-                                <li><img src="../media/rates/Group%201929.svg"></li>
-                                <li><img src="../media/rates/Group%201928.svg"></li>
-                                <li><img src="../media/rates/Group%201929.svg"></li>
-                                <button>Отправить</button>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <button>Выбрать</button>
                             </ul>
                         </div>
 
 
                     </li>
                     <li class="rates-free rates-free-premium">
-                        <h4>Бесплатный</h4>
+                        <h4>Премиум</h4>
                         <p class="rates-oldprice">3350 ₽/месяц</p>
                         <p class="rates-price">2680 ₽</p>
                         <p class="rates-time">Месяц</p>
@@ -374,11 +388,11 @@
                         <p class="rates-functions-text">50</p>
                         <div class="rates-free-image">
                             <ul>
-                                <li><img src="../media/rates/Group%201928.svg"></li>
-                                <li><img src="../media/rates/Group%201929.svg"></li>
-                                <li><img src="../media/rates/Group%201928.svg"></li>
-                                <li><img src="../media/rates/Group%201929.svg"></li>
-                                <button>Отправить</button>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <li><img src="../media/rates/tick.svg"></li>
+                                <button>Выбрать</button>
                             </ul>
                         </div>
 
@@ -386,22 +400,22 @@
                     </li>
                 </ul>
             </div>
-
-
         </div>
-        <div class="rates-payment">
-            <h5>Оплата взимается только за Ваши проекты.<br>
-                Участие в проектах других пользователей — бесплатно!</h5>
+        <div class="wr-rates-payment">
+            <img src="../media/rates/like.svg" />
+            <span>Оплата взимается только за Ваши проекты.</span>
+            <span>Участие в проектах других пользователей — бесплатно!</span>
         </div>
     </div>
+    </div>
 </section>
-<section class="wr-develoment">
+<section class="wr-development">
     <div class="container-custom">
-        <div class="develoment">
-            <div class="develoment-image">
+        <div class="development">
+            <div class="development-image">
                 <img src="../media/develoment/Group%20(1).svg">
             </div>
-            <div class="develoment-designe">
+            <div class="development-design">
                 <h3>Разработка дизайн-проекта в 2 раза быстрее</h3>
                 <p>TeRoom – это таск-менеджер, разработанный специально для управления проектами дизайнеров интерьеров и
                     архитекторов.</p>

@@ -1,16 +1,16 @@
-.develoment{
+.development{
     display: flex;
     justify-content: space-between;
     gap: 277px;
     padding-top: 220px;
 }
-.develoment-designe{
+.development-design{
 
 }
-.develoment-image{
+.development-image{
 
 }
-.develoment-designe h3{
+.development-design h3{
     font-family: "GeometriaBold";
     font-size: 45px;
     line-height: 57px;
@@ -18,7 +18,7 @@
     margin-bottom: 30px;
 
 }
-.develoment-designe p{
+.development-design p{
     margin-top: 20px;
     font-family: "GeometriaRegular";
     font-size: 20px;
