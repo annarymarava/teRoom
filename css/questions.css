@@ -1,21 +1,74 @@
+.wr-questions {
+    margin-top: 180px;
+}
+
 .wr-questions h2{
-    font-family: "GeometriaBold";
+    font-family: "GeometriaBold", sans-serif;
     font-size: 48px;
     color: #1E3147;
     text-align: center;
-    padding-top: 76px;
+    margin-bottom: 60px;
 }
-.questions{
+.wr-questions-common {
+    background-color: #F8F9FC;
+    border-radius: 66px;
+    padding: 76px 60px 104px 86px;
+    position: relative;
+}
+.wr-questions-block {
     display: flex;
     justify-content: space-between;
+    gap: 116px;
+    position: relative;
+}
+.wr-questions-items {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+.wr-questions-item {
+    padding: 18px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.wr-questions-item img {
+  transform: rotate(180deg);
+}
+.wr-questions-item-wrapper.active .wr-questions-item-full{
+    display: block;
+}
+.wr-questions-item-wrapper.active .wr-questions-item{
+    display: none;
+}
 
+.wr-questions-item p{
+    font-family: 'GeometriaMedium', sans-serif;
+    font-size: 20px;
+    line-height: 12px;
+    letter-spacing: 0.01em;
+    color: #788CA1;
 }
-.questions-add{
-    padding: 18px 36px 14px 19px;
-    margin-top: 60px;
+.wr-questions-item-full{
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 18px;
+    height: max-content;
+    display: none;
 }
-.questions-add h3{
-    font-family: "GeometriaMedium";
+.wr-questions-item-full div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wr-questions-item-full h3{
+    font-family: "GeometriaMedium", sans-serif;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -23,12 +76,68 @@
     color: #1E3147;
     margin: 18px 0;
 }
-.questions-add p{
-    font-family: "GeometriaRegular";
+.wr-questions-item-full ol {
+   margin-left: 18px;
+}
+.wr-questions-item-full ol li {
+    font-family: "GeometriaRegular", sans-serif;
     font-size: 16px;
     line-height: 150%;
     color: #1E3147;
 }
-.questions-image{
-    padding: 76px 60px 133px 0;
+.wr-questions-image{
+}
+
+.wr-questions-plus-bold {
+    width: 36px;
+    height: 36px;
+    left: 10%;
+    top: -14%;
+    transform: matrix(0.27, -0.95, 0.98, 0.24, 0, 0);
+}
+.wr-questions-plus-thin {
+    width: 36px;
+    height: 36px;
+    left: 48%;
+    bottom: 5%;
+    transform: matrix(0.27, -0.95, 0.98, 0.24, 0, 0);
+}
+.wr-questions-plus-bold div, .wr-questions-plus-thin div{
+    background-color: #33A1FB;
+}
+.wr-questions-plus-bold .wr-questions-plus-vertical {
+    width: 6px;
+    height: 36px;
+}
+.wr-questions-plus-bold .wr-questions-plus-horizontal {
+    height: 6px;
+    width: 36px;
+}
+.wr-questions-plus-thin .wr-questions-plus-vertical {
+    width: 2px;
+    height: 36px;
+}
+.wr-questions-plus-thin .wr-questions-plus-horizontal {
+    height: 2px;
+    width: 36px;
+}
+
+.wr-questions-plus {
+    width: 23px;
+    height: 23px;
+    left: -5%;
+    top: 5%;
+    transform: matrix(0.27, -0.95, 0.98, 0.24, 0, 0);
+}
+
+.wr-questions-plus div {
+    background-color: #1E3147;
+}
+.wr-questions-plus .wr-questions-plus-vertical {
+    width: 1px;
+    height: 23px;
+}
+.wr-questions-plus .wr-questions-plus-horizontal {
+    height: 1px;
+    width: 23px;
 }

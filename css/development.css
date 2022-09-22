@@ -1,26 +1,33 @@
-.development{
+.wr-development {
+    background-image: url("../media/development/development_bg.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 160px;
+}
+
+.wr-development-container{
     display: flex;
     justify-content: space-between;
     gap: 277px;
-    padding-top: 220px;
+    padding-top: 80px;
 }
-.development-design{
+.wr-development-design{
 
 }
-.development-image{
+.wr-development-image{
 
 }
-.development-design h3{
-    font-family: "GeometriaBold";
+.wr-development-design h3{
+    font-family: "GeometriaBold", sans-serif;
     font-size: 45px;
     line-height: 57px;
     color: #1E3147;
     margin-bottom: 30px;
 
 }
-.development-design p{
+.wr-development-design p{
     margin-top: 20px;
-    font-family: "GeometriaRegular";
+    font-family: "GeometriaRegular", sans-serif;
     font-size: 20px;
     line-height: 25px;
     color: #1E3147;

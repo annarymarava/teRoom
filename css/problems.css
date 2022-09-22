@@ -1,40 +1,52 @@
 .wr-problems{
-    padding-top: 180px;
+    margin-top: 180px;
 }
 .wr-problems h2{
-    font-family: "GeometriaBold";
+    font-family: "GeometriaBold", sans-serif;
     font-size: 48px;
     text-align: center;
     color: #1E3147;
 }
-.problem-image{
+.wr-problem-image{
     padding: 67px 175px 85px 396px;
+    position: relative;
 }
-.problems{
+.wr-problem-circle {
+    width: 584px;
+    height: 584px;
+    border-radius: 50%;
+    background-color: #F8F9FC;
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+}
+.wr-problems-common{
     display: flex;
     position: relative;
-
 }
-.feedback{
+.wr-problem-feedback {
     display: block;
     text-align: center;
     margin-top: 99px;
     background: #FFFFFF;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    max-width: 410px;
-    max-height: 458px;
+    padding: 55px 65px 58px 59px;
+    position: relative;
+    height: max-content;
+    overflow: hidden;
 }
-.feedback h4{
+
+.wr-problem-feedback h4{
     margin-top: 55px;
-    font-family: "GeometriaMedium";
+    font-family: "GeometriaMedium", sans-serif;
     font-size: 24px;
     line-height: 100%;
     text-align: center;
     color: #1E3147;
 }
-.feedback p{
-    font-family: "GeometriaRegular";
+.wr-problem-feedback p{
+    font-family: "GeometriaRegular", sans-serif;
     font-size: 12px;
     line-height: 15px;
     text-align: center;
@@ -43,39 +55,72 @@
     margin-top: 10px;
     margin-bottom: 26px;
 }
-.feedback-data input{
-    font-family: "GeometriaMedium";
+.wr-problem-feedback-data input, .wr-problem-feedback-data textarea{
+    font-family: "GeometriaMedium", sans-serif;
     font-size: 12px;
     letter-spacing: 0.01em;
     color: #99A3C5;
-    background: #F5F7F9;
-    border-radius: 10px;
     border: none;
+    outline: none;
+    padding: 12px 16px 12px 24px;
+    background-color: #F5F7F9;
+    border-radius: 10px;
+    resize: none
+}
+.wr-problem-feedback-data {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
-}
-.data-feedback{
-    padding: 12px 130px 13px 24px;
-    max-width: 286px;
-    margin-top: 16px;
-}
 .feedback-data-description{
-    padding: 12px 130px 53px 24px;
-    max-width: 286px;
-    margin-top: 16px;
 }
-.feedback button{
-    font-family: "GeometriaBold";
+.wr-problem-feedback button{
+    font-family: "GeometriaBold", sans-serif;
     font-size: 14px;
     color: #FFFFFF;
-    padding: 11px 12px 10px;
+    padding: 10px 25px;
     background: #33A1FB;
     border-radius: 22px;
     border: none;
-    margin: 32px 0 58px 0;
+    margin-top: 32px;
 }
-.feedback-image{
+.wr-problem-feedback-image{
     margin-right: 0;
-    left: 1581px;
+    right: 0;
     position: absolute;
-    top: 260px;
+    top: 50%;
+}
+.wr-problem-plus-bold {
+    width: 59px;
+    height: 59px;
+    left: -20px;
+    top: 50%;
+    transform: rotate(69.11deg) translateX(-100%);
+    z-index: -1;
+}
+.wr-problem-plus-bold div {
+    background-color: #33A1FB;
+}
+.wr-problem-plus-bold .wr-problem-plus-vertical {
+    width: 9px;
+    height: 59px;
+}
+.wr-problem-plus-bold .wr-problem-plus-horizontal {
+    height: 9px;
+    width: 59px;
+}
+.wr-problem-circle-icon {
+    width: 94px;
+    height: 94px;
+    background-color: #F9D208;
+    bottom: 0;
+    left: 0;
+    transform: translate(-33%, 33%);
+}
+
+.wr-problem-right-border {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
