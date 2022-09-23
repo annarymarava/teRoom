@@ -16,14 +16,14 @@
 }
 .using__before{
     padding: 13px 8px 12px 25px;
-    font-family: "GeometriaRegular";
+    font-family: "GeometriaRegular", sans-serif;
     font-size: 20px;
     color: #FFFFFF;
     background: #33A1FB;
     border-radius: 47px 0 0 47px;
 }
 .using__after{
-    font-family: "GeometriaRegular";
+    font-family: "GeometriaRegular", sans-serif;
     font-size: 20px;
     color: #788CA1;
     padding: 12px 13px 12px 24px;
