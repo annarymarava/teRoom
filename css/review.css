@@ -1,4 +1,14 @@
 .wr-review{
+    padding: 180px 0 180px;
+}
+.wr-review h2{
+    font-family: "GeometriaBold",sans-serif;
+    font-size: 45px;
+    text-align: center;
+
+}
+.wr-review-container{
+    margin-top: 70px;
     background-color: #FFFFFF;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
