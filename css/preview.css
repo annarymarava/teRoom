@@ -94,5 +94,13 @@ top: -30%;
   transform: translate(-70%, -70%);
 }
 
+.wr-home-image a {
+   transform: translate(-70%, -70%);
+  position: absolute;
+  right: 43%;
+  top: 49%;
+}
+
+
 
 
