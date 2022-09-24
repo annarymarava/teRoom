@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
+  background-size: cover;
 }
 
 .wr-steps-plus {
