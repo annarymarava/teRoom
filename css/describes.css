@@ -1,15 +1,63 @@
 .wr-describes {
-padding: 65px 364px 120px 364px;
+  padding: 65px 15px 120px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+@media all and (min-width: 768px) {
+  .wr-describes {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+@media all and (min-width: 1440px) {
+  .wr-describes {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
 }
 
 .wr-describes-cards {
-  padding: 36px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 48px;
   background-color: #F8F9FC;
   border-radius: 20px;
+  max-width: 290px;
+  padding: 30px 24px;
+
 }
+@media all and (min-width: 576px) {
+  .wr-describes-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 29px;
+    padding: 31px 30px;
+    max-width: 504px;
+  }
+}
+@media all and (min-width: 768px) {
+  .wr-describes-cards {
+    gap: 20px;
+    padding: 30px 25px;
+    max-width: 570px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .wr-describes-cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 28px;
+    max-width: 920px;
+  }
+}
+@media all and (min-width: 1440px) {
+  .wr-describes-cards {
+    gap: 40px;
+    padding: 36px;
+    max-width: 1192px;
+  }
+}
+
 
 .wr-describes-card {
   background-color: #fff;

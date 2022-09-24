@@ -32,8 +32,13 @@ header {
   padding: 160px 0;
   display: flex;
   gap: 315px;
+  flex-direction: column;
 }
-
+@media all and (min-width: 1440px) {
+  .wr-home {
+    flex-direction: row;
+  }
+}
 .home-title {
   font-family: 'GeometriaBold', sans-serif;
   font-size: 48px;
