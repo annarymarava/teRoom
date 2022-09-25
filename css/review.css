@@ -1,0 +1,76 @@
+.wr-review{
+    padding: 180px 0 180px;
+}
+.wr-review h2{
+    font-family: "GeometriaBold",sans-serif;
+    font-size: 45px;
+    text-align: center;
+
+}
+.wr-review-container{
+    margin-top: 70px;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    max-width: 466px;
+    margin-left: 293px;
+    padding: 42px 44px 38px 121px;
+    position: relative;
+}
+.wr-review-manager{
+    display: flex;
+    justify-content: space-between;
+}
+.review-manager-name h4{
+    font-family: "GeometriaMedium",sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #1E3147;
+}
+.wr-review-manager p{
+    font-family: "GeometriaRegular", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: #788CA1;
+    margin-top: 2px;
+}
+.review-manager-evaluation p{
+    text-align: right;
+}
+.review-manager-text{
+    margin-top: 23px;
+    font-family: "GeometriaRegular", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #1E3147;
+}
+.review-social-contacts{
+    margin-top: 24px;
+    font-family: "GeometriaMedium",sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    display: flex;
+    gap: 12px;
+}
+.rates-face{
+    min-width: 142px;
+    min-height: 142px;
+    border-radius: 50%;
+    border: none;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 42%, rgba(235,235,235,1) 51%);
+    position: absolute;
+    left: -11.2%;
+    bottom: 26%;
+}
+.rates-face img{
+
+
+    position: absolute;
+    left: 6%;
+    top: 5.2%;
+
+
+}

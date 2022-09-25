@@ -60,9 +60,12 @@
     fill: #157ED4;
 }
 .wr-opportunities-projects {
-    display: flex;
+    display: none;
     justify-content: space-between;
     position: relative;
+}
+.wr-opportunities-projects.active {
+    display: flex;
 }
 .wr-opportunities-project-text {
     padding-top: 100px ;
