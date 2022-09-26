@@ -89,7 +89,7 @@
     }
 @media all and (min-width: 1920px) {
         .platform-card {
-            max-width: 320px;
+            min-width: 320px;
             padding: 42px 45px 34px;
             background-color: #FFFFFF;
             box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
