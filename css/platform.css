@@ -2,66 +2,136 @@
 
 }
 .wr-platform h2{
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
-    color: #1E3147;
+    padding: 130px 0 60px;
 }
+@media all and (min-width: 576px) {
+    .wr-platform h2{
+        padding: 140px 0 60px;
+    }
+}
+@media all and (min-width: 768px) {
+    .wr-platform h2{
+        padding: 140px 0 70px;
+    }
+}
+
+@media all and (min-width: 1920px) {
+    .wr-platform h2{
+        padding: 180px 0 90px;
+    }
+}
+
 .wr-platform-card{
     position: relative;
-    display: flex;
-    justify-content: center;
-    min-height: 356px;
-}
-.platform-card{
-    max-width: 320px;
-    padding: 42px 45px 34px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    position: relative;
-}
-.platform-card:nth-child(2){
-    position: absolute;
-    left: 0;
-    z-index: 1;
-}
-.platform-card:nth-child(4){
-    position: absolute;
-    right: 0;
-}
+    display: block;
 
-.platform-card h3{
-    font-family: "GeometriaBold", sans-serif;
-    margin-top: 29px;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: left;
+    margin-top: 10px;
 
 }
-.platform-card p{
-    font-family: "GeometriaRegular", sans-serif;
-    margin-top: 16px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 23px;
-    text-align: left;
+@media all and (min-width: 576px) {
+    .wr-platform-card{
+
+    }
 }
+@media all and (min-width: 768px) {
+    .wr-platform-card{
+        margin-top: 20px;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 50px;
+
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-platform-card{
+        gap: 70px;
+        margin-top: 75px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-platform-card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        min-height: 356px;
+        gap: 117px;
+    }
+}
+.platform-card {
+        padding: 40px 25px 33px;
+        max-width: 290px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        position: relative;
+        margin-top: 50px;
+    }
+
+@media all and (min-width: 576px) {
+        .platform-card {
+            padding: 40px 40px 26px;
+            max-width: 504px;
+            margin-top: 50px;
+        }
+    }
+@media all and (min-width: 768px) {
+        .platform-card {
+            padding: 40px 40px 33px;
+            max-width: 320px;
+            margin-top: 50px;
+        }
+    }
+@media all and (min-width: 1200px) {
+        .platform-card {
+            margin-top: 0;
+        }
+    }
+@media all and (min-width: 1920px) {
+        .platform-card {
+            max-width: 320px;
+            padding: 42px 45px 34px;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            position: relative;
+        }
+    }
+
+
+
+.platform-card h3 {
+        font-family: "GeometriaBold", sans-serif;
+        margin-top: 29px;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+
+    }
+
+.platform-card p {
+        font-family: "GeometriaRegular", sans-serif;
+        margin-top: 16px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        text-align: left;
+    }
 
 .wr-platform-dashed-circle {
-    width: 31px;
-    height: 31px;
-    right: 0;
-    top: 0;
-    transform: translate(33%, -17%);
-    z-index: -1;
-}
+        width: 31px;
+        height: 31px;
+        right: 0;
+        top: 0;
+        transform: translate(33%, -17%);
+        z-index: -1;
+    }
 
 .wr-platform-circle-icon {
-    background-color: #33A1FB;
-    width: 80px;
-    height: 80px;
-    bottom: 0;
-    left: 0;
-    transform: translate(-50%, 50%);
-}
+        background-color: #33A1FB;
+        width: 80px;
+        height: 80px;
+        bottom: 0;
+        left: 0;
+        transform: translate(-50%, 50%);
+    }

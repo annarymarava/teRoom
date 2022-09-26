@@ -133,7 +133,7 @@
 }
 @media all and (min-width: 1200px) {
     .wr-registering-fields input{
-        min-width: 140px;
+        min-width: 120px;
     }
 }
 @media all and (min-width: 1600px) {
@@ -212,54 +212,80 @@
 }
 
     @media all and (min-width: 1200px) {
-        .wr-registering-room{
+        .wr-registering-room {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            right: -60px;
+            right: -32px;
             display: block;
+            max-width: 240px;
+
 
         }
     }
-    @media all and (min-width: 1920px) {
-        .wr-registering-room{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: -60px;
-            display: block;}}
 
-.wr-registering-checkbox{
-    margin-top: 32px;
-}
-.wr-registering-checkbox form{
-    color: #ffffff;
-    font-family: "GeometriaRegular", sans-serif;
-    font-size: 13px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+        @media all and (min-width: 1350px) {
+            .wr-registering-room {
+                max-width: 300px;
+                right: -45px;
+            }
+        }
 
-.wr-registering-checkbox span{
-    color: rgba(254, 209, 1, 1);
-    text-decoration: underline dotted;
-}
-.wr-registering-dashed-circle-big {
-    width: 122px;
-    height: 122px;
-    top: 0;
-    left: 0;
-    transform: translate(-33%, -33%);
-    z-index: -1;
-}
+            @media all and (min-width: 1500px) {
+                .wr-registering-room {
+                    max-width: 400px;
+                    right: -60px;
+                }
+            }
 
-.wr-registering-dashed-circle-small {
-    width: 69px;
-    height: 69px;
-    bottom: 0;
-    right: 0;
-    transform: translate(105%, 20%);
-    z-index: -1;
+                @media all and (min-width: 1700px) {
+                    .wr-registering-room {
+                        max-width: 500px;
+                        right: -60px;
+                    }
+                }
+                @media all and (min-width: 1920px) {
+                    .wr-registering-room {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: -60px;
+                    }
+                }
 
-}
+                .wr-registering-checkbox {
+                    margin-top: 32px;
+                }
+
+                .wr-registering-checkbox form {
+                    color: #ffffff;
+                    font-family: "GeometriaRegular", sans-serif;
+                    font-size: 13px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+                .wr-registering-checkbox span {
+                    color: rgba(254, 209, 1, 1);
+                    text-decoration: underline dotted;
+                }
+
+                .wr-registering-dashed-circle-big {
+                    width: 122px;
+                    height: 122px;
+                    top: 0;
+                    left: 0;
+                    transform: translate(-33%, -33%);
+                    z-index: -1;
+                }
+
+                .wr-registering-dashed-circle-small {
+                    width: 69px;
+                    height: 69px;
+                    bottom: 0;
+                    right: 0;
+                    transform: translate(105%, 20%);
+                    z-index: -1;
+
+                }
