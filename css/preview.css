@@ -154,6 +154,10 @@ header {
   cursor: pointer;
 }
 
-
+@media all and (min-width: 1200px) {
+  .burger-button {
+    display: none;
+  }
+}
 
 
