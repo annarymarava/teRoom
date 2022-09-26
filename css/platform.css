@@ -37,7 +37,7 @@
     .wr-platform-card{
         margin-top: 20px;
         display: flex;
-        justify-content: start;
+        justify-content: space-around;
         flex-wrap: wrap;
         gap: 50px;
 
@@ -108,6 +108,18 @@
         text-align: left;
 
     }
+@media all and (min-width: 1920px) {
+    .platform-card:nth-child(2) {
+        position: absolute;
+        left: 0;
+        z-index: 1;
+    }
+
+    .platform-card:nth-child(4) {
+        position: absolute;
+        right: 0;
+    }
+}
 
 .platform-card p {
         font-family: "GeometriaRegular", sans-serif;
