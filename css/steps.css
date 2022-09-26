@@ -95,6 +95,7 @@
   flex-direction: column-reverse;
   align-items: start;
   gap: 60px;
+  margin: 0 auto;
 }
 
 @media all and (min-width: 1200px) {

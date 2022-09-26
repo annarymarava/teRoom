@@ -16,7 +16,7 @@
     position: relative;
     margin: 50px 0 50px 71px;
 }
-.swiper-slide:nth-child(1) {
+.wr-review .swiper-slide:nth-child(1) {
     margin-left: 301px;
 }
 .wr-review-manager{

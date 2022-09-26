@@ -39,6 +39,17 @@ input {
   outline: none;
 }
 
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+input::placeholder {
+  font-family: 'GeometriaMedium', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #99A3C5;
+}
+
 * {
   margin: 0;
   padding: 0;

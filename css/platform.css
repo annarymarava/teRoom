@@ -1,13 +1,36 @@
 .wr-platform{
 
 }
-.wr-platform h2{
-    padding: 130px 0 60px;
+.wr-platform .container-custom{
+    padding: 0;
 }
 @media all and (min-width: 576px) {
-    .wr-platform h2{
-        padding: 140px 0 60px;
+    .wr-platform .container-custom {
+        padding: 0 36px;
+        margin: 0 auto;
     }
+}
+
+@media all and (min-width: 768px) {
+    .wr-platform .container-custom {
+        padding: 0 39px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .wr-platform  .container-custom {
+        padding: 0 45px;
+
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-platform  .container-custom {
+        max-width: 1460px;
+    }
+}
+
+.wr-platform .container-title-custom h2{
+    padding: 140px 0 60px;
 }
 @media all and (min-width: 768px) {
     .wr-platform h2{
@@ -23,28 +46,23 @@
 
 .wr-platform-card{
     position: relative;
-    display: block;
-
-    margin-top: 10px;
-
+    display: none;
 }
 @media all and (min-width: 576px) {
     .wr-platform-card{
-
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
     }
 }
 @media all and (min-width: 768px) {
     .wr-platform-card{
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 50px;
-
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media all and (min-width: 1200px) {
     .wr-platform-card{
+        grid-template-columns: repeat(3, 1fr);
         gap: 70px;
         margin-top: 75px;
     }
@@ -52,27 +70,23 @@
 @media all and (min-width: 1920px) {
     .wr-platform-card {
         position: relative;
-        display: flex;
-        justify-content: center;
         min-height: 356px;
         gap: 117px;
     }
 }
 .platform-card {
         padding: 40px 25px 33px;
-        max-width: 290px;
         background-color: #FFFFFF;
         box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
         position: relative;
-        margin-top: 50px;
     }
 
 @media all and (min-width: 576px) {
         .platform-card {
             padding: 40px 40px 26px;
             max-width: 504px;
-            margin-top: 50px;
+            margin: 0 auto;
         }
     }
 @media all and (min-width: 768px) {
@@ -137,8 +151,13 @@
         top: 0;
         transform: translate(33%, -17%);
         z-index: -1;
+    display: none;
     }
-
+@media all and (min-width: 576px) {
+    .platform-card {
+        display: block;
+    }
+}
 .wr-platform-circle-icon {
         background-color: #33A1FB;
         width: 80px;
@@ -146,4 +165,23 @@
         bottom: 0;
         left: 0;
         transform: translate(-50%, 50%);
+}
+.wr-platform-slider .wr-platform-card{
+    padding: 30px 0 100px 0;
+    box-sizing: border-box;
+}
+.wr-platform-slider {
+padding: 0 15px !important;
+}
+.wr-platform-slider .platform-card {
+    box-sizing: border-box;
+}
+
+@media all and (min-width: 576px) {
+    .wr-platform-slider {
+        display: none;
     }
+}
+.wr-platform .swiper-pagination {
+    bottom: 15px !important;
+}
