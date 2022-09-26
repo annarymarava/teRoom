@@ -1,4 +1,4 @@
-.footer {
+.wr-footer {
     background-color: #1e3147;
     align-items: center;
     display: flex;
@@ -48,7 +48,7 @@
     text-decoration: none;
 }
 
-.contacts {
+.wr-contacts {
     background-color: #fff;
     border-radius: 50px;
     gap: 15px;
@@ -72,7 +72,7 @@
     font-weight: 500;
 }
 
-.mail {
+.wr-mail {
     align-items: flex-start;
     gap: 10px;
     display: flex;

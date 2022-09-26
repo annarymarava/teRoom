@@ -1,68 +1,236 @@
 .wr-registering{
-    padding-top: 224px;
-    padding-bottom: 72px;
+    padding: 130px 0 130px;
+}
+@media all and (min-width: 576px) {
+    .wr-registering{
+        padding: 174px 0 140px;
+    }
+}
+@media all and (min-width: 768px) {
+    .wr-registering{
+        padding: 174px 0 140px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-registering{
+        padding: 174px 0 140px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-registering{
+        padding-top: 224px;
+        padding-bottom: 72px;
+    }
 }
 .wr-registering-title{
     background: #33A1FB;
-    border-radius: 60px;
-    padding: 71px 74px 64px 74px;
+    border-radius: 40px;
+    padding: 47px 15px ;
     position: relative;
     margin-right: 32px;
 }
+@media all and (min-width: 576px) {
+    .wr-registering-title{
+        padding: 47px 63px 61px 63px ;
+        border-radius: 40px;
+    }
+}
+@media all and (min-width: 768px) {
+    .wr-registering-title{
+        padding: 47px 30px 43px 30px ;
+        border-radius: 40px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-registering-title{
+        padding: 47px 50px 46px 50px ;
+        border-radius: 60px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-registering-title {
+        border-radius: 60px;
+        padding: 71px 74px 64px 74px;
+        margin-right: 32px;
+    }
+}
+    .wr-registering-title h3{
+        font-family: 'GeometriaBold', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff;
+    }
+@media all and (min-width: 576px) {
+    .wr-registering-title h3{
+        font-size: 32px;
+    }
+}
 
-.wr-registering-title h3{
-    font-family: 'GeometriaBold', sans-serif;
-    font-size: 40px;
-    text-align: left;
-    color: #ffffff;
+@media all and (min-width: 1200px) {
+    .wr-registering-title h3{
+        font-size: 32px;
+        text-align: left;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-registering-title h3 {
+        font-size: 40px;
+    }
 }
 .wr-registering-title p{
     font-family: "GeometriaRegular", sans-serif;
-    font-size: 20px;
-    text-align: left;
+    font-size: 16px;
+    text-align: center;
     color: #ffffff;
-    margin-top: 16px;
+    margin-top: 20px;
+    line-height: 20px;
+    }
+@media all and (min-width: 576px) {
+    .wr-registering-title p{
+        font-size: 20px;
+        margin-top: 12px;
+        line-height: 25px;
+    }
 }
-.wr-registering-title input{
+
+@media all and (min-width: 1200px) {
+    .wr-registering-title p{
+        text-align: left;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-registering-title p{
+        margin-top: 16px;
+    }
+}
+
+
+.wr-registering-fields input{
     font-family: "GeometriaMedium", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
-    padding: 18px 12px;
-    margin-right: 20px;
+    padding: 15px 7px;
+    margin: 30px 15px 0 15px;
     border-radius: 10px;
     background: #F8F9FC;
     border: none;
     color: #99A3C5;
+
+
+
+}
+@media all and (min-width: 576px) {
+    .wr-registering-fields input{
+        padding: 15px 10px;
+    }
+}
+@media all and (min-width: 768px) {
+    .wr-registering-fields input{
+        padding: 15px 10px;
+        min-width: 140px;
+        margin: 30px 15px 0 0;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-registering-fields input{
+        min-width: 140px;
+    }
+}
+@media all and (min-width: 1600px) {
+    .wr-registering-fields input{
+        min-width: 180px;
+    }
 }
 
-.wr-registering-title input::placeholder{
-    font-family: "GeometriaMedium", sans-serif;
-    font-size: 18px;
-    text-align: left;
-    color: #99A3C5;
+@media all and (min-width: 1920px) {
+    .wr-registering-fields input{
+        font-size: 18px;
+        padding: 18px 12px;
+        max-width: 230px;
+    }
 }
+
+
 .wr-registering-fields{
-    margin-top: 52px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+@media all and (min-width: 768px) {
+    .wr-registering-fields{
+
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 30px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-registering-fields{
+        margin-top: 30px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-registering-fields{
+        margin-top: 52px;
+}
+
+
 }
 .wr-registering-fields button{
     font-family: "GeometriaBold", sans-serif;
     background-color: #F9D208;
     border-radius: 10px;
     text-align: center;
-    padding: 18px;
+    padding: 14px 12px;
     color: #ffffff;
     border: none;
     font-size: 20px;
     line-height: 24px;
+}
+@media all and (min-width: 576px) {
+    .wr-registering-fields button{
+        padding: 14px 6px;
+        margin: 30px 15px 0 15px;
+    }
+}
+@media all and (min-width: 768px) {
+    .wr-registering-fields button{
+        margin: 30px 15px 0 0;
+    }
+}
+.wr-registering-room img{
+    width: 100%;
 }
 .wr-registering-room{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: -60px;
+    display: none;
+
 }
+
+    @media all and (min-width: 1200px) {
+        .wr-registering-room{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -60px;
+            display: block;
+
+        }
+    }
+    @media all and (min-width: 1920px) {
+        .wr-registering-room{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -60px;
+            display: block;}}
+
 .wr-registering-checkbox{
-    margin-top: 29px;
+    margin-top: 32px;
 }
 .wr-registering-checkbox form{
     color: #ffffff;
@@ -72,6 +240,7 @@
     flex-direction: column;
     gap: 10px;
 }
+
 .wr-registering-checkbox span{
     color: rgba(254, 209, 1, 1);
     text-decoration: underline dotted;
