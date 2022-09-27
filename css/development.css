@@ -55,6 +55,7 @@
 
 .wr-development-image{
 max-width: 290px;
+    margin: 0 auto;
 }
 @media all and (min-width: 576px) {
     .wr-development-image{

@@ -169,6 +169,7 @@
 }
 .wr-questions-image img{
     display: none;
+    margin: 0 auto;
 }
 @media all and (min-width: 576px) {
     .wr-questions-image img{
