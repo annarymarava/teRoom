@@ -1,7 +1,3 @@
-.wr-services-title{
-    padding: 110px 0 90px;
-
-}
 .wr-services{
     padding: 0 15px;
 
@@ -34,8 +30,16 @@
     flex-direction: column;
     align-items: center;
 }
-.services h2{
+.services .container-title-custom h2{
     text-align: center;
+    font-size: 30px;
+    line-height: 38px;
+}
+@media all and (min-width: 576px) {
+    .services .container-title-custom h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
 }
 .services-logo img{
     width: 100%;
