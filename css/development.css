@@ -2,33 +2,126 @@
     background-image: url("../media/development/development_bg.png");
     background-repeat: no-repeat;
     background-position: top;
-    margin-top: 160px;
+    padding-top: 130px;
+}
+@media all and (min-width: 576px) {
+    .wr-development {
+        padding-top: 140px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-development {
+        padding-top: 160px;
+    }
 }
 
 .wr-development-container{
-    display: flex;
-    justify-content: space-between;
-    gap: 277px;
-    padding-top: 80px;
-}
-.wr-development-design{
+    display: block;
+    padding-top: 15px;
 
 }
+@media all and (min-width: 576px) {
+    .wr-development-container{
+        padding-top: 24px;
+    }
+}
+
+
+
+
+@media all and (min-width: 1200px) {
+    .wr-development-container{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 34px;
+        gap: 130px;
+
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-development-container{
+        gap: 277px;
+        padding-top: 54px;
+    }
+}
+.wr-development-design {
+    margin-top: 0;
+}
+@media all and (min-width: 1200px) {
+    .wr-development-design{
+        margin-top: 25px;
+    }
+}
+
 .wr-development-image{
-
+max-width: 290px;
 }
+@media all and (min-width: 576px) {
+    .wr-development-image{
+        max-width: 504px;
+    }
+}
+@media all and (min-width: 768px) {
+    .wr-development-image{
+        max-width: 570px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .wr-development-image{
+        max-width: 570px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-development-image{
+        max-width: 570px;
+    }
+}
+
 .wr-development-design h3{
     font-family: "GeometriaBold", sans-serif;
-    font-size: 45px;
-    line-height: 57px;
     color: #1E3147;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    font-size: 34px;
+    line-height: 43px;
 
 }
+
+@media all and (min-width: 1200px) {
+    .wr-development-design h3{
+    margin-top: 0;
+
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-development-design h3{
+        font-family: "GeometriaBold", sans-serif;
+        font-size: 45px;
+        line-height: 57px;
+        color: #1E3147;
+
+
+
+    }
+}
+
+
 .wr-development-design p{
-    margin-top: 20px;
+    margin-top: 40px;
     font-family: "GeometriaRegular", sans-serif;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 23px;
     color: #1E3147;
 }
+
+@media all and (min-width: 1920px) {
+    .wr-development-design p{
+        margin-top: 50px;
+        font-family: "GeometriaRegular", sans-serif;
+        font-size: 20px;
+        line-height: 25px;
+        color: #1E3147;
+    }
+
+    }
+
