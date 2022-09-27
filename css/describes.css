@@ -18,17 +18,13 @@
 }
 
 .wr-describes-cards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  row-gap: 48px;
+  display: none;
   background-color: #F8F9FC;
   border-radius: 20px;
-  max-width: 290px;
-  padding: 30px 24px;
-
 }
 @media all and (min-width: 576px) {
   .wr-describes-cards {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 29px;
     padding: 31px 30px;
@@ -89,3 +85,24 @@ max-height: 45px;
   margin-top: 5px;
 }
 
+.wr-describes-slider {
+  max-width: 290px;
+  padding-bottom: 50px !important;
+}
+@media all and (min-width: 576px) {
+  .wr-describes-slider {
+    display: none;
+  }
+}
+.wr-describes-slider .wr-describes-slider-card.swiper-slide {
+  box-sizing: border-box;
+  height: 100%;
+}
+.wr-describes-slider-card {
+  padding: 30px 24px;
+  background-color: #F8F9FC;
+  border-radius: 20px;
+}
+.wr-describes-slider .swiper-pagination {
+  bottom: 0 !important;
+}
