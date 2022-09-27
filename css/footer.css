@@ -1,13 +1,46 @@
 .wr-footer {
     background-color: #1e3147;
     align-items: center;
-    display: flex;
+    display: block;
     width: 100%;
+    text-align: center;
+    margin-top: 90px;
+}
 
+
+@media all and (min-width: 1200px) {
+    .wr-footer {
+display: flex;
+
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-footer {
+
+    }
 }
 
 .footer-logo-teroom {
-    padding: 38px 61px 38px 80px;
+    padding-top: 45px;
+}
+@media all and (min-width: 576px) {
+    .footer-logo-teroom {
+        padding-top: 37px;
+
+
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .footer-logo-teroom {
+        padding: 37px 0 39px 45px;
+
+    }
+}
+@media all and (min-width: 1920px) {
+    .footer-logo-teroom {
+        padding: 36px 61px 40px 80px;
+    }
 }
 
 .footer-text {
@@ -20,25 +53,82 @@
     position: relative;
     padding-top: 15px;
     text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
 }
+@media all and (min-width: 1200px) {
+    .footer-text {
+        max-width: 367px;
+        padding-top: 0;
 
-.footer-text:after {
-    content: "";
-    width: 1px;
-    height: 30px;
-    background-color: #fff;
-    position: absolute;
-    top: 40%;
-    right: 0;
-    margin-right: 36px;
+    }
+}
+    @media all and (min-width: 1920px) {
+        .footer-text {
+            max-width: 240px;
+            padding-top: 0;
+            text-align: left;
+
+        }
+}
+@media all and (min-width: 1920px) {
+    .footer-text:after {
+        content: "";
+        width: 1px;
+        height: 30px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 36px;
+    }
+}
+.footer-logo-text{
+    display: block;
+    text-align: center;
+}
+@media all and (min-width: 1920px) {
+    .footer-logo-text{
+        display: flex;
+        align-items: center;
+    }
+}
+.menu li {
+
 }
 
 .menu {
-    gap: 100px;
-    margin: 0;
-    padding: 16px 0 0;
+margin-bottom: 40px;
     list-style: none;
-    display: flex;
+    display: block;
+}
+@media all and (min-width: 576px) {
+    .menu {
+display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .menu {
+
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .menu {
+    gap: 80px;
+        margin: 0 60px 0 60px ;
+
+    }
+}
+@media all and (min-width: 1920px) {
+    .menu {
+        gap: 100px;
+        margin: 0;
+        display: flex;
+        align-self: center;
+    }
 }
 
 .menu__nav {
@@ -47,15 +137,34 @@
     color: #FFFFFF;
     text-decoration: none;
 }
-
-.wr-contacts {
+.contacts {
     background-color: #fff;
     border-radius: 50px;
     gap: 15px;
     padding: 10px;
     display: flex;
-    margin: 40px 45px 40px 130px;
+    margin: 0 auto;
     text-decoration: none;
+    max-width: 254px;
+}
+@media all and (min-width: 576px) {
+    .contacts {
+        margin: 0;
+    }
+}
+@media all and (min-width: 1200px) {
+    .contacts {
+        margin-right: 60px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .contacts {
+        gap: 15px;
+        padding: 10px;
+        display: flex;
+        margin-left: 64px;
+
+    }
 }
 
 .contacts__name {
@@ -64,20 +173,38 @@
     color: #1E3147;
 }
 
+
 .contacts__info {
     color: #33a1fb;
-    margin: 5px 0 0;
+    margin: 5px 0 5px;
     font-family: Geometria, Arial, sans-serif;
     font-size: 14px;
     font-weight: 500;
 }
 
-.wr-mail {
-    align-items: flex-start;
+.mail {
+    justify-content: center;
     gap: 10px;
     display: flex;
+    margin-top: 30px;
 }
-
+@media all and (min-width: 576px) {
+    .mail {
+        margin: 20px 0 20px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .mail {
+        margin: 20px 0 20px;
+        justify-content: start;
+    }
+}
+@media all and (min-width: 1920px) {
+    .mail {
+        margin: 20px 0 20px 64px;
+        justify-content: start;
+    }
+}
 .mail__teroom {
     font-family: 'Mulish', sans-serif;
     font-style: normal;
@@ -86,11 +213,53 @@
 text-decoration: none;
     color: #FFFFFF;
 }
-
-.mail__info {
+.mail-info-guru {
+    display: none;
+}
+@media all and (min-width: 1920px) {
+    .mail-info-guru {
+        font-family: "GeometriaMedium", sans-serif;
+        font-weight: 500;
+        font-size: 11px;
+        color: #FFFFFF;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        display: block;
+    }
+}
+.mail-info {
     font-family: "GeometriaMedium", sans-serif;
     font-weight: 500;
     font-size: 11px;
     color: #FFFFFF;
     margin-top: 20px;
+    padding-bottom: 20px;
 }
+@media all and (min-width: 1920px) {
+    .mail-info {
+     display: none;
+    }
+}
+.contacts-mail{
+    display: block;
+}
+@media all and (min-width: 576px) {
+    .contacts-mail{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media all and (min-width: 1200px) {
+    .contacts-mail {
+        display: block;
+        margin-top: 65px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .contacts-mail {
+        display: flex;
+        align-self: center;
+        margin: 0;
+    }
+}
+
