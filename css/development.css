@@ -2,19 +2,19 @@
     background-image: url("../media/development/development_bg.png");
     background-repeat: no-repeat;
     background-position: top;
-    padding-top: 130px;
+    margin-top: 130px;
+    background-size: contain;
 }
 @media all and (min-width: 576px) {
     .wr-development {
-        padding-top: 140px;
+        margin-top: 140px;
     }
 }
 @media all and (min-width: 1920px) {
     .wr-development {
-        padding-top: 160px;
+        margin-top: 160px;
     }
 }
-
 .wr-development-container{
     display: block;
     padding-top: 15px;
@@ -25,8 +25,6 @@
         padding-top: 24px;
     }
 }
-
-
 
 
 @media all and (min-width: 1200px) {
@@ -54,29 +52,16 @@
 }
 
 .wr-development-image{
-max-width: 290px;
     margin: 0 auto;
 }
-@media all and (min-width: 576px) {
+@media all and (min-width: 1200px) {
     .wr-development-image{
-        max-width: 504px;
-    }
-}
-@media all and (min-width: 768px) {
-    .wr-development-image{
-        max-width: 570px;
+        min-width: 570px;
     }
 }
 
-@media all and (min-width: 1200px) {
-    .wr-development-image{
-        max-width: 570px;
-    }
-}
-@media all and (min-width: 1920px) {
-    .wr-development-image{
-        max-width: 570px;
-    }
+.wr-development-image img{
+    width: 100%;
 }
 
 .wr-development-design h3{
