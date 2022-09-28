@@ -1,10 +1,21 @@
 .wr-problems{
     margin-top: 130px;
+    position: relative;
 }
 @media all and (min-width: 576px) {
     .wr-problems{
+        padding: 0 36px;
         margin-top: 140px;
-
+    }
+}
+@media all and (min-width: 768px) {
+    .wr-problems{
+       padding: 0 130px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-problems{
+       padding: 0 141px 0 45px;
     }
 }
 
@@ -26,14 +37,11 @@
 }
 @media all and (min-width: 1200px) {
     .wr-problem-image{
-    display: block;
-    position: relative;
-        padding: 67px 143px 160px 45px;
+        display: block;
+        position: relative;
     }
-}
-@media all and (min-width: 1920px) {
-    .wr-problem-image{
-        padding: 67px 175px 85px 396px;
+    .wr-problem-image img{
+       width: 100%;
     }
 }
 @media all and (min-width: 1200px) {
@@ -44,7 +52,8 @@
         background-color: #F8F9FC;
         position: absolute;
         z-index: -1;
-        left: 10%;
+        left: -50%;
+        transform: translateX(50%);
     }
 }
 @media all and (min-width: 1920px) {
@@ -53,18 +62,41 @@
         height: 584px;
     }
 }
-.wr-problems-common{
-    display: flex;
-    position: relative;
+.wr-problems-common {
+    margin-top: 70px;
 }
+@media all and (min-width: 576px) {
+    .wr-problems-common{
+        margin-top: 60px;
+    }
+}
+@media all and (min-width: 768px) {
+    .wr-problems-common{
+        margin-top: 80px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-problems-common{
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr 1fr;
+        gap: 143px;
+        margin-top: 80px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-problems-common{
+        margin-top: 60px;
+    }
+}
+
 
 .wr-problem-feedback {
     display: block;
     text-align: center;
-    margin: 71px auto 0;
+    width: 100%;
     background: #FFFFFF;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
     padding: 43px 15px 34px ;
     position: relative;
     height: max-content;
@@ -72,28 +104,26 @@
 }
 @media all and (min-width: 576px) {
     .wr-problem-feedback {
-        margin: 60px auto 0;
+        width: auto;
+        border-radius: 20px;
         padding: 55px 54px 34px 60px;
     }
 }
 
 @media all and (min-width: 768px) {
     .wr-problem-feedback {
-        margin: 81px auto 0;
         padding: 55px 60px 38px ;
     }
 }
 
 @media all and (min-width: 1200px) {
     .wr-problem-feedback {
-        margin: 81px 0 0 ;
         padding: 55px 65px 38px 59px;
 
     }
 }
 @media all and (min-width: 1920px) {
 .wr-problem-feedback {
-    margin: 99px 0 0;
     padding: 55px 65px 58px 59px;
 }
 }
@@ -159,12 +189,19 @@
 }
 @media all and (min-width: 768px) {
     .wr-problem-feedback-image{
-    display: block;
+        display: block;
         margin-right: 0;
         right: 0;
         position: absolute;
         top: 50%;
-
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-problem-feedback-image{
+        display: block;
+        right: -180px;
+        position: absolute;
+        top: 50%;
     }
 }
 
@@ -198,6 +235,12 @@
 
 .wr-problem-right-border {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -5px;
+    top: -5px;
+}
+@media all and (min-width: 768px) {
+    .wr-problem-right-border{
+        right: 0;
+        top: 0;
+    }
 }

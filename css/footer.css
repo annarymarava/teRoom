@@ -2,85 +2,70 @@
     background-color: #1e3147;
     align-items: center;
     display: block;
-    width: 100%;
     text-align: center;
     margin-top: 90px;
-}
-
-
-@media all and (min-width: 1200px) {
-    .wr-footer {
-display: flex;
-
-    }
-}
-@media all and (min-width: 1920px) {
-    .wr-footer {
-
-    }
-}
-
-.footer-logo-teroom {
-    padding-top: 45px;
+    padding: 45px 0 20px;
 }
 @media all and (min-width: 576px) {
-    .footer-logo-teroom {
-        padding-top: 37px;
-
-
+    .wr-footer {
+        padding: 37px 0 14px;
     }
 }
-
+@media all and (min-width: 768px) {
+    .wr-footer {
+        padding: 37px 61px 14px 61px;
+    }
+}
 @media all and (min-width: 1200px) {
-    .footer-logo-teroom {
-        padding: 37px 0 39px 45px;
-
+    .wr-footer {
+        padding: 37px 0 20px;
     }
 }
 @media all and (min-width: 1920px) {
-    .footer-logo-teroom {
-        padding: 36px 61px 40px 80px;
+    .wr-footer {
+        padding: 37px 0;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-footer .container-custom .wr-footer-container{
+        display: flex;
+        align-items: center;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-footer .container-custom {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-footer .container-custom {
+        max-width: 1760px;
     }
 }
 
 .footer-text {
-    max-width: 240px;
     font-family: "GeometriaRegular", sans-serif;
     font-size: 12px;
     line-height: 18px;
     color: #FFFFFF;
     opacity: 0.8;
     position: relative;
-    padding-top: 15px;
+    margin: 15px 0 40px;
     text-decoration: none;
     text-align: center;
-    margin: 0 auto;
 }
 @media all and (min-width: 1200px) {
     .footer-text {
-        max-width: 367px;
-        padding-top: 0;
-
+        display: none;
     }
 }
-    @media all and (min-width: 1920px) {
-        .footer-text {
-            max-width: 240px;
-            padding-top: 0;
-            text-align: left;
-
-        }
-}
 @media all and (min-width: 1920px) {
-    .footer-text:after {
-        content: "";
-        width: 1px;
-        height: 30px;
-        background-color: #fff;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-right: 36px;
+    .footer-text {
+        display: block;
+        margin: 0;
+        max-width: 240px;
     }
 }
 .footer-logo-text{
@@ -90,36 +75,44 @@ display: flex;
 @media all and (min-width: 1920px) {
     .footer-logo-text{
         display: flex;
-        align-items: center;
+        align-items: end;
+        position: relative;
+        margin-right: 36px;
+    }
+
+    .footer-logo-text:after {
+        content: "";
+        width: 1px;
+        height: 30px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
-.menu li {
-
+.menu li a {
+    white-space: nowrap;
 }
 
 .menu {
-margin-bottom: 40px;
+    margin-bottom: 40px;
     list-style: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
 }
 @media all and (min-width: 576px) {
     .menu {
-display: flex;
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
-    }
-}
-
-@media all and (min-width: 768px) {
-    .menu {
-
     }
 }
 
 @media all and (min-width: 1200px) {
     .menu {
-    gap: 80px;
+        gap: 75px;
         margin: 0 60px 0 60px ;
-
     }
 }
 @media all and (min-width: 1920px) {
@@ -141,29 +134,34 @@ display: flex;
     background-color: #fff;
     border-radius: 50px;
     gap: 15px;
-    padding: 10px;
     display: flex;
     margin: 0 auto;
     text-decoration: none;
-    max-width: 254px;
+    padding: 8px 17px 7px 11px;
+    max-width: fit-content;
 }
 @media all and (min-width: 576px) {
     .contacts {
         margin: 0;
+        max-width: 100%;
     }
 }
 @media all and (min-width: 1200px) {
     .contacts {
-        margin-right: 60px;
+        height: fit-content;
     }
 }
 @media all and (min-width: 1920px) {
     .contacts {
         gap: 15px;
-        padding: 10px;
         display: flex;
         margin-left: 64px;
 
+    }
+}
+@media all and (min-width: 768px) {
+    .contacts img {
+       width: 42px;
     }
 }
 
@@ -195,14 +193,13 @@ display: flex;
 }
 @media all and (min-width: 1200px) {
     .mail {
-        margin: 20px 0 20px;
-        justify-content: start;
+       display: none;
     }
 }
 @media all and (min-width: 1920px) {
     .mail {
-        margin: 20px 0 20px 64px;
-        justify-content: start;
+        display: flex;
+        margin: 0;
     }
 }
 .mail__teroom {
@@ -235,31 +232,71 @@ text-decoration: none;
     margin-top: 20px;
     padding-bottom: 20px;
 }
-@media all and (min-width: 1920px) {
+@media all and (min-width: 1200px) {
     .mail-info {
-     display: none;
+        display: none;
     }
 }
+
 .contacts-mail{
     display: block;
 }
 @media all and (min-width: 576px) {
     .contacts-mail{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }
 @media all and (min-width: 1200px) {
     .contacts-mail {
         display: block;
-        margin-top: 65px;
     }
 }
 @media all and (min-width: 1920px) {
     .contacts-mail {
         display: flex;
-        align-self: center;
+        align-items: center;
         margin: 0;
+        gap: 46px;
     }
 }
+@media all and (min-width: 1200px) {
+    .wr-footer nav {
+        display: flex;
+        align-items: center;
+    }
+}
+.wr-footer-desktop-components {
+    display: none;
+}
+@media all and (min-width: 1200px) {
+    .wr-footer-desktop-components {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-footer-desktop-components {
+        display: none;
+    }
+}
+.desktop-footer-text, .wr-footer-desktop-mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.wr-footer-desktop-mail {
+    margin-right: 110px;
+}
 
+.desktop-footer-text {
+    font-family: "GeometriaRegular", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}

@@ -201,4 +201,8 @@ input::placeholder {
   .wr-common-bg{
     background-size: cover;
   }
+  .menu-desktop {
+    display: flex;
+    flex-direction: column;
+  }
 }
