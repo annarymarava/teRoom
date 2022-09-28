@@ -239,3 +239,17 @@ header {
   }
 }
 
+.home-play {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-top: 30px;
+  text-decoration: none;
+}
+.home-play p {
+  font-family: 'GeometriaMedium',sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #33A1FB;
+  border-bottom: 1px dashed #33A1FB;
+}

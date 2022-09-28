@@ -14,12 +14,13 @@
     background-color: #FFFFFF;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    padding: 42px 44px 38px 121px;
+    padding: 42px 44px 38px 80px;
     position: relative;
     margin: 50px 0 50px 71px;
 }
 @media all and (min-width: 576px) {
     .wr-review .swiper-slide {
+        padding: 42px 44px 38px 90px;
         width: 80%;
     }
 }
@@ -28,6 +29,7 @@
         margin-left: 39px;
     }
     .wr-review .swiper-slide {
+        padding: 42px 44px 38px 121px;
         width: 80%;
     }
 }
@@ -60,9 +62,14 @@
 }
 .review-manager-name h4{
     font-family: "GeometriaMedium",sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.01em;
     color: #1E3147;
+}
+@media all and (min-width: 576px) {
+    .review-manager-name h4 {
+        font-size: 16px;
+    }
 }
 .wr-review-manager p{
     font-family: "GeometriaRegular", sans-serif;
