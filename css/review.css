@@ -1,5 +1,8 @@
 .wr-review{
-    padding: 180px 0 180px;
+    padding-top: 180px;
+}
+.wr-review .swiper{
+   cursor: pointer;
 }
 .wr-review h2{
     font-family: "GeometriaBold",sans-serif;
@@ -11,17 +14,49 @@
     background-color: #FFFFFF;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    max-width: 466px;
     padding: 42px 44px 38px 121px;
     position: relative;
     margin: 50px 0 50px 71px;
 }
-.wr-review .swiper-slide:nth-child(1) {
-    margin-left: 301px;
+@media all and (min-width: 576px) {
+    .wr-review .swiper-slide {
+        width: 80%;
+    }
 }
+@media all and (min-width: 768px) {
+    .wr-review .swiper-slide:nth-child(1) {
+        margin-left: 39px;
+    }
+    .wr-review .swiper-slide {
+        width: 80%;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-review .swiper-slide:nth-child(1) {
+        margin-left: 45px;
+    }
+    .wr-review .swiper-slide {
+        width: 65%;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-review .swiper-slide:nth-child(1) {
+        margin-left: 301px;
+    }
+    .wr-review .swiper-slide {
+        width: 40%;
+    }
+}
+
 .wr-review-manager{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+}
+@media all and (min-width: 768px) {
+    .wr-review-manager{
+        flex-direction: row;
+    }
 }
 .review-manager-name h4{
     font-family: "GeometriaMedium",sans-serif;
@@ -37,7 +72,12 @@
     margin-top: 2px;
 }
 .review-manager-evaluation p{
-    text-align: right;
+    text-align: left;
+}
+@media all and (min-width: 768px) {
+    .review-manager-evaluation p{
+        text-align: right;
+    }
 }
 .review-manager-text{
     margin-top: 23px;
@@ -61,19 +101,42 @@
     height: 142px;
     border-radius: 50%;
     border: none;
-    background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 42%, rgba(235,235,235,1) 51%);
     position: absolute;
-    left: -11.2%;
-    bottom: 26%;
+    left: 0;
+    transform: translateX(-50%);
+    top: 30px;
 }
+@media all and (min-width: 576px) {
+    .rates-face {
+        top: 55px;
+    }
+}
+@media all and (min-width: 768px) {
+    .rates-face {
+       top: 75px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .rates-face {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 .rates-face img{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .wr-review .swiper-slide {
-    width: 40%;
+    opacity: 0.5;
+}
+
+.wr-review .swiper-slide.swiper-slide-active {
+    opacity: 1;
+}
+.wr-review .swiper-slide:last-child.swiper-slide-next {
+    opacity: 1;
 }
