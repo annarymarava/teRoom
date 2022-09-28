@@ -605,6 +605,7 @@
 
                             </li>
                         </ul>
+                        <div class="swiper-pagination"></div>
                     </div>
                     <div id="rates-kinds-mobile" class="wr-rates-kinds swiper  ratesSliderMobile">
                         <ul class="rates-kinds-list swiper-wrapper">
@@ -685,6 +686,7 @@
 
                             </li>
                         </ul>
+                        <div class="swiper-pagination"></div>
                     </div>
                     <div id="rates-kinds-mobile-small" class="wr-rates-kinds swiper ratesSliderMobileSmall">
                         <ul class="rates-kinds-list swiper-wrapper">
@@ -765,6 +767,7 @@
 
                             </li>
                         </ul>
+                        <div class="swiper-pagination"></div>
                     </div>
                     <div id="rates-kinds" class="wr-rates-kinds ">
                         <ul class="rates-kinds-list">
@@ -1301,12 +1304,23 @@
 </script>
 <script>
     const content = document.getElementById('rates-kinds');
+    const contentSliderTablet = document.getElementById('rates-kinds-tablet');
+    const contentSliderMobile = document.getElementById('rates-kinds-mobile');
+    const contentSliderMobileSmall = document.getElementById('rates-kinds-mobile-small');
+
     const select = document.getElementById('rates-kinds-select');
     select.addEventListener('change', (e)=> {
         if (e.target.value === '1') {
             content.classList.add('inactive')
+            contentSliderTablet.classList.add('inactive')
+            contentSliderMobile.classList.add('inactive')
+            contentSliderMobileSmall.classList.add('inactive')
+
         } else {
             content.classList.remove('inactive')
+            contentSliderTablet.classList.remove('inactive')
+            contentSliderMobile.classList.remove('inactive')
+            contentSliderMobileSmall.classList.remove('inactive')
 
         }
     })

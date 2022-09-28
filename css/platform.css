@@ -108,7 +108,6 @@
             background-color: #FFFFFF;
             box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
-            position: relative;
         }
     }
 
@@ -128,6 +127,12 @@
         left: 0;
         z-index: 1;
     }
+  .platform-card:nth-child(3) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
     .platform-card:nth-child(4) {
         position: absolute;

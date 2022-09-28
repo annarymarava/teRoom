@@ -13,17 +13,6 @@
         padding: 0 39px;
     }
 }
-@media all and (min-width: 1200px) {
-    .wr-services {
-        padding: 0 45px;
-
-    }
-}
-@media all and (min-width: 1920px) {
-    .wr-services {
-        max-width: 1460px;
-    }
-}
 .services {
     padding-top: 96px;
     display: flex;

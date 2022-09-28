@@ -195,4 +195,10 @@ input::placeholder {
   background-image: url("../media/platform/common_bg.svg");
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: contain;
+}
+@media all and (min-width: 1920px) {
+  .wr-common-bg{
+    background-size: cover;
+  }
 }
