@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
@@ -18,9 +18,9 @@
     <meta name="twitter:card" content="" />
 
     <link href="../css/index.css" rel="stylesheet">
+        <link href="../css/swiper-bungle.min.css" rel="stylesheet">
     <link rel="teroom icon" href="../media/fav.svg" type="image/x-icon">
     <title>TeRoom</title>
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <div id="cookie-alert" class="wr-cookie-alert">
@@ -1283,164 +1283,6 @@
     </footer>
 </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>
-   new Swiper(".ratesSlider", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-  new Swiper(".ratesSliderMobile", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-   new Swiper(".ratesSliderMobileSmall", {
-       slidesPerView: 2,
-       spaceBetween: 30,
-       pagination: {
-           el: ".swiper-pagination",
-           clickable: true,
-       },
-   });
-
-</script>
-<script>
-    new Swiper(".opportunitiesSlider", {
-        slidesPerView: 'auto',
-        spaceBetween: 15,
-    });
-</script>
-<script>
-    new Swiper(".describesSlider", {
-        slidesPerView: "auto",
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-</script>
-<script>
-     new Swiper(".platformSlider", {
-         slidesPerView: "auto",
-         spaceBetween: 30,
-         pagination: {
-             el: ".swiper-pagination",
-         },
-    });
-</script>
-<script>
-    new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        spaceBetween: 30,
-    });
-</script>
-
-<script>
-    const element = document.getElementById('wr-questions-items');
-    const wrapperArray = element.getElementsByClassName('wr-questions-item-wrapper');
-    element.addEventListener('click', (e)=> {
-        if(e.target.closest(".wr-questions-item-wrapper")) {
-            for (let i = 0; i < wrapperArray.length; i++) {
-                if(wrapperArray[i].classList.contains('active')){
-                    wrapperArray[i].classList.remove('active')
-                }
-            }
-            e.target.closest(".wr-questions-item-wrapper").classList.add('active')
-
-        }
-    })
-</script>
-<script>
-    const tabs = document.getElementById('tabs');
-    const tabsMobile = document.getElementById('tabs-mobile');
-    const itemLinks = tabs.getElementsByTagName('li')
-    const itemLinksMobile = tabsMobile.getElementsByTagName('li')
-    const itemContent = document.getElementsByClassName('wr-opportunities-projects')
-    tabs.addEventListener('click', (e)=> {
-        if(e.target.closest("li")) {
-            for (let i = 0; i < itemLinks.length; i++) {
-                if(itemLinks[i].classList.contains('active')){
-                    itemLinks[i].classList.remove('active')
-                    itemContent[i].classList.remove('active')
-                }
-            }
-            const id =  e.target.closest("li").id
-            for (let i = 0; i < itemContent.length; i++) {
-                if(itemContent[i].id.concat('-link') === id){
-                    itemContent[i].classList.add('active')
-                }
-            }
-            e.target.closest("li").classList.add('active')
-        }
-    })
-    tabsMobile.addEventListener('click', (e)=> {
-        if(e.target.closest("li")) {
-            for (let i = 0; i < itemLinksMobile.length; i++) {
-                if(itemLinksMobile[i].classList.contains('active')){
-                    itemLinksMobile[i].classList.remove('active')
-                    itemContent[i].classList.remove('active')
-                }
-            }
-            const id =  e.target.closest("li").id
-            for (let i = 0; i < itemContent.length; i++) {
-                if(itemContent[i].id.concat('-link-mobile') === id){
-                    itemContent[i].classList.add('active')
-                }
-            }
-            e.target.closest("li").classList.add('active')
-        }
-    })
-</script>
-<script>
-    const burgerBtn = document.getElementById('burger');
-    const navigationWr = document.getElementById('mobile-nav');
-    const closeNavMobile = document.getElementById('close-mobile-nav')
-    burgerBtn.addEventListener('click', ()=> {
-        navigationWr.classList.add('active')
-    })
-    closeNavMobile.addEventListener('click', ()=> {
-        navigationWr.classList.remove('active')
-    })
-</script>
-<script>
-    const content = document.getElementById('rates-kinds');
-    const contentSliderTablet = document.getElementById('rates-kinds-tablet');
-    const contentSliderMobile = document.getElementById('rates-kinds-mobile');
-    const contentSliderMobileSmall = document.getElementById('rates-kinds-mobile-small');
-
-    const select = document.getElementById('rates-kinds-select');
-    select.addEventListener('change', (e)=> {
-        if (e.target.value === '1') {
-            content.classList.add('inactive')
-            contentSliderTablet.classList.add('inactive')
-            contentSliderMobile.classList.add('inactive')
-            contentSliderMobileSmall.classList.add('inactive')
-
-        } else {
-            content.classList.remove('inactive')
-            contentSliderTablet.classList.remove('inactive')
-            contentSliderMobile.classList.remove('inactive')
-            contentSliderMobileSmall.classList.remove('inactive')
-
-        }
-    })
-</script>
-<script>
-    const closeBtn = document.getElementById('close-cookie-alert');
-    const alertBtn = document.getElementById('cookie-btn');
-    const alertCookie = document.getElementById('cookie-alert');
-    closeBtn.addEventListener('click', ()=> {
-        alertCookie.classList.add('none')
-    })
-    alertBtn.addEventListener('click', ()=> {
-        alertCookie.classList.add('none')
-    })
-</script>
+<script src="../scripts/index.js"></script>
+<script src="../scripts/swiper-bungle.min.js"></script>
 </html>
