@@ -32,14 +32,17 @@
         display: flex;
         justify-content: space-between;
         padding-top: 34px;
-        gap: 130px;
-
+    }
+    .wr-development-design {
+        margin-left: 130px;
     }
 }
 @media all and (min-width: 1920px) {
     .wr-development-container{
-        gap: 277px;
         padding-top: 54px;
+    }
+    .wr-development-design {
+        margin-left: 277px;
     }
 }
 .wr-development-design {
