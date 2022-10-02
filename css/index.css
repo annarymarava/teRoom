@@ -206,3 +206,52 @@ input::placeholder {
     flex-direction: column;
   }
 }
+
+.wr-cookie-alert {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  padding: 24px 0 20px 0;
+  z-index: 10;
+
+}
+.wr-cookie-alert.none {
+  display: none;
+}
+.cookie-alert {
+  font-family: "GeometriaRegular", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #1E3147;
+  display: flex;
+  align-items: center;
+}
+.cookie-alert a {
+  color: #33A1FB;
+}
+.wr-cookie-btn {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+@media all and (min-width: 768px) {
+  .wr-cookie-btn {
+    margin-left: 146px;
+  }
+}
+.wr-cookie-btn button {
+  display: none;
+}
+@media all and (min-width: 768px) {
+  .wr-cookie-btn button {
+    margin-right: 67px;
+    display: block;
+  }
+}
+@media all and (min-width: 1920px) {
+  .wr-rates .container-custom{
+    padding: 26px 0 67px;
+  }
+}

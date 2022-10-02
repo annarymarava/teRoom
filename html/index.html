@@ -10,7 +10,25 @@
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
-<div class="wr-preview" id="wr-preview">
+    <div id="cookie-alert" class="wr-cookie-alert">
+        <div class="container-custom">
+            <div class="cookie-alert">
+        <div>Мы используем файлы cookie для улучшения работы сайта.
+        Подробную информацию вы найдете в <a>Политике ООО «TeRoom» в отношении cookie-файлов.</a>
+        Продолжая просматривать этот сайт, вы соглашаетесь с условиями использования cookie–файлов.
+        <a>Изменить настройки.</a>
+        </div>
+        <div class="wr-cookie-btn">
+            <button id="cookie-btn" class="common-btn-md">Понятно</button>
+            <svg id="close-cookie-alert" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 15" stroke="#1E3147" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 15L15 1" stroke="#1E3147" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        </div>
+    </div>
+</div>
+    <div class="wr-preview" id="wr-preview">
     <div id="mobile-nav" class="wr-mobile-nav">
     <div class="mobile-nav">
         <div class="wr-logo-mobile">
@@ -1399,6 +1417,17 @@
             contentSliderMobileSmall.classList.remove('inactive')
 
         }
+    })
+</script>
+<script>
+    const closeBtn = document.getElementById('close-cookie-alert');
+    const alertBtn = document.getElementById('cookie-btn');
+    const alertCookie = document.getElementById('cookie-alert');
+    closeBtn.addEventListener('click', ()=> {
+        alertCookie.classList.add('none')
+    })
+    alertBtn.addEventListener('click', ()=> {
+        alertCookie.classList.add('none')
     })
 </script>
 </html>
