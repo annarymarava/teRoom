@@ -1,0 +1,14 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 0.97">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #33a1fb;
+      }
+    </style>
+  </defs>
+  <title>fav</title>
+  <g>
+    <path class="cls-1" d="M.81.31h0A.14.14,0,0,0,1,.17.14.14,0,0,0,.86,0h0A.45.45,0,0,0,.37.48V.87a.13.13,0,1,0,.26,0V.48A.18.18,0,0,1,.81.31Z" transform="translate(0 -0.03)"/>
+    <path class="cls-1" d="M.14.31H.23A.14.14,0,0,0,.37.17.14.14,0,0,0,.23,0H.14A.14.14,0,0,0,0,.17.14.14,0,0,0,.14.31Z" transform="translate(0 -0.03)"/>
+  </g>
+</svg>
