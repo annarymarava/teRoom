@@ -13,9 +13,10 @@ header {
 }
 
 .nav-list {
-  display: flex;
+  display: grid;
   list-style: none;
   gap: 30px;
+  grid-template-columns: repeat(4, auto);
 }
 
 .header-list-substrate {
@@ -42,18 +43,11 @@ header {
   padding: 70px 0;
   display: flex;
   flex-direction: column;
-  gap: 46px;
 }
 @media all and (min-width: 1200px) {
   .wr-home {
     flex-direction: row;
     align-items: center;
-  }
-}
-
-@media all and (min-width: 1920px) {
-  .wr-home {
-    gap: 315px;
   }
 }
 .home-title {
@@ -98,9 +92,11 @@ header {
 .wr-home-mobile .wr-home-btn {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   width: 100%;
   margin-top: 44px;
+}
+.wr-home-mobile .wr-home-btn button:nth-child(1){
+  margin-bottom: 20px;
 }
 .wr-home-mobile .wr-home-btn button{
   font-size: 18px;
@@ -114,16 +110,19 @@ header {
   .wr-home-text  .wr-home-btn {
     display: flex;
     margin-top: 100px;
-    gap: 45px;
     align-items: center;
+  }
+  .wr-home-text  .wr-home-btn  button:nth-child(1){
+    margin-bottom: 0;
+    margin-right: 45px;
   }
   .wr-home-mobile {
     display: none;
   }
 }
 @media all and (min-width: 1920px) {
-  .wr-home-text  .wr-home-btn {
-    gap: 57px;
+  .wr-home-text  .wr-home-btn  button:nth-child(1){
+    margin-right: 57px;
   }
 }
 
@@ -137,7 +136,20 @@ header {
 .wr-home-image {
   position: relative;
   width: 100%;
+  margin-top: 46px;
 }
+@media all and (min-width: 1200px) {
+  .wr-home-image {
+    margin-top: 0;
+  margin-left: 46px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .wr-home-image {
+    margin-left: 315px;
+  }
+}
+
 
 .wr-home-image img:nth-child(1) {
  width: 100%;
@@ -164,7 +176,6 @@ header {
 .wr-burger-btn{
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 .wr-burger-btn button{
   display: none;
@@ -173,6 +184,7 @@ header {
 @media all and (min-width: 576px) {
   .wr-burger-btn button {
     display: block;
+    margin-right: 20px;
   }
 }
 .burger-button {
@@ -214,7 +226,8 @@ header {
 }
 
 .mobile-nav .nav-list {
-  flex-direction: column;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   margin-bottom: 56px;
 }
 .mobile-nav .nav-list li a{
@@ -241,7 +254,6 @@ header {
 
 .home-play {
   display: flex;
-  gap: 9px;
   align-items: center;
   margin-top: 30px;
   text-decoration: none;
@@ -252,4 +264,5 @@ header {
   line-height: 24px;
   color: #33A1FB;
   border-bottom: 1px dashed #33A1FB;
+  margin-right: 9px;
 }
