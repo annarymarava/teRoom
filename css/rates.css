@@ -71,13 +71,17 @@
     justify-content: center;
     flex-direction: column;
     padding: 10px 0 46px;
-    gap: 17px;
+}
+.wr-rates-select label{
+    margin-right: 17px;
 }
 @media all and (min-width: 576px) {
     .wr-rates-select{
         flex-direction: row;
-        gap: 20px;
         padding: 26px 0 67px;
+    }
+    .wr-rates-select label{
+        margin-right: 20px;
     }
 }
 @media all and (min-width: 768px) {
@@ -272,8 +276,11 @@
     display: flex;
 }
 @media all and (min-width: 1920px) {
-    .rates-kinds-list {
-        gap: 30px;
+    .rates-kinds-list li{
+        margin-right: 30px;
+    }
+    .rates-kinds-list li:last-child{
+        margin-right: 0;
     }
 }
 .rates-free{
