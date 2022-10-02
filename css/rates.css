@@ -215,7 +215,7 @@
 .wr-rates-kinds.inactive .rates-oldprice {
     color: white;
 }
-.wr-rates-kinds.inactive  ul li {
+.wr-rates-kinds.inactive  ul .rates-free {
     border: 2px solid #ffffff;
 }
 .wr-rates-kinds.inactive  ul li::before {
@@ -382,9 +382,6 @@
 .rates-free-one{
     border: 2px solid #ffffff;
 }
-.rates-free-premium{
-    border: 2px solid #FED56D;
-}
 .rates-free-minibasic{
     position: relative;
 }
@@ -400,13 +397,17 @@
     padding: 5px 7px 4px 6px;
     background-color: #33A1FB;
     border-radius: 34px;
-    top: -3%;
-    left: 37%;
+    top: -0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.rates-free-premium{
-    position: relative;
+.rates-free {
+    cursor: pointer;
 }
-.rates-free-premium:before{
+.rates-free:hover {
+    border: 2px solid #FED56D;
+}
+.rates-free:hover:before{
     position: absolute;
     content: "-20%";
     font-family: "GeometriaMedium", sans-serif;
@@ -418,8 +419,9 @@
     padding: 5px 7px 4px 6px;
     background-color:#FED56D;
     border-radius: 34px;
-    top: -3%;
-    left: 37%;
+    top: -0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .rates-free-free{
     color: #ffffff;
