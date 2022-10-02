@@ -159,8 +159,7 @@
     resize: none
 }
 .wr-problem-feedback-data {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 16px;
 }
 

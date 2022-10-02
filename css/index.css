@@ -43,7 +43,7 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
 }
-input::placeholder {
+input::placeholder, textarea::placeholder {
   font-family: 'GeometriaMedium', sans-serif;
   font-size: 16px;
   line-height: 20px;
