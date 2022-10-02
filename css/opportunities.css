@@ -22,8 +22,13 @@
 .wr-opportunities-tabs{
     display: none;
     justify-content: center;
-    gap: 15px;
     padding-bottom: 100px;
+}
+.wr-opportunities-tabs li{
+    margin-right: 15px;
+}
+.wr-opportunities-tabs li:last-child{
+    margin-right: 0;
 }
 @media all and (min-width: 1200px) {
     .wr-opportunities-tabs{
@@ -33,7 +38,6 @@
 .swiper .wr-opportunities-tabs{
     display: flex;
     justify-content: start;
-    gap: 0;
     padding-bottom: 100px;
 }
 @media all and (min-width: 1200px) {
@@ -135,8 +139,7 @@
     margin-bottom: 40px;
 }
 .wr-opportunities-project-text-new{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 29px;
     margin-top: 48px;
 }
@@ -144,7 +147,9 @@
 .wr-opportunities-project-text-new div{
     display: flex;
     align-items: center;
-    gap: 13px;
+}
+.wr-opportunities-project-text-new div img {
+    margin-right: 13px;
 }
 
 .wr-opportunities-project-text-new span{
