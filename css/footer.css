@@ -99,28 +99,46 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 19px;
+
+}
+.menu li {
+    margin-bottom: 19px;
 }
 @media all and (min-width: 576px) {
     .menu {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .menu li{
+        margin-bottom: 0;
+        margin-right: 19px;
+    }
+    .menu li:last-child{
+        margin-right: 0;
     }
 }
 
 @media all and (min-width: 1200px) {
     .menu {
-        gap: 75px;
         margin: 0 60px 0 60px ;
+    }
+    .menu li{
+        margin-right: 75px;
+    }
+    .menu li:last-child{
+        margin-right: 0;
     }
 }
 @media all and (min-width: 1920px) {
     .menu {
-        gap: 100px;
-        margin: 0;
         display: flex;
         align-self: center;
+    }
+    .menu li{
+        margin-right: 100px;
+    }
+    .menu li:last-child{
+        margin-right: 0;
     }
 }
 

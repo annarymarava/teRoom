@@ -101,6 +101,7 @@
     position: relative;
     height: max-content;
     overflow: hidden;
+    box-sizing: border-box;
 }
 @media all and (min-width: 576px) {
     .wr-problem-feedback {
