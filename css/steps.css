@@ -70,8 +70,7 @@
 }
 
 .wr-steps-blocks {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 110px;
 }
 @media all and (min-width: 576px) {
@@ -94,13 +93,11 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: start;
-  gap: 60px;
   margin: 0 auto;
 }
 
 @media all and (min-width: 1200px) {
   .wr-steps-step {
-    gap: 124px;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
@@ -109,26 +106,43 @@
     flex-direction: row-reverse;
   }
 }
-@media all and (min-width: 1920px) {
-  .wr-steps-step {
-    gap: 135px;
-  }
-}
+
 
 
 .wr-steps-describe {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 20px;
   position: relative;
   align-items: start;
   justify-content: center;
   height: max-content;
   max-width: 500px;
+  margin-bottom: 60px;
+}
+@media all and (min-width: 1200px) {
+  .wr-steps-describe {
+    margin-bottom: 0;
+    margin-left: 124px;
+  }
+  .wr-steps-step:nth-child(2) .wr-steps-describe{
+    margin-right: 124px;
+    margin-left: 0;
+  }
+}
+@media all and (min-width: 1920px) {
+  .wr-steps-describe {
+    margin-left: 135px;
+  }
+  .wr-steps-step:nth-child(2) .wr-steps-describe{
+    margin-right: 135px;
+    margin-left: 0;
+  }
 }
 .wr-steps-describe div {
   display: flex;
-  gap: 17px;
+}
+.wr-steps-describe div img {
+  margin-right: 17px;
 }
 
 
