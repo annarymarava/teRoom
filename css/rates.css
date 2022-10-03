@@ -319,7 +319,7 @@
 }
 .wr-rates-payment{
     background: #33A1FB;
-    border-radius: 50px;
+    border-radius: 66px;
     font-family: "GeometriaBold", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -355,7 +355,7 @@
 }
 @media all and (min-width: 1920px) {
     .wr-rates-payment {
-        width: 70%;
+        width: 80%;
         padding: 30px 57px 30px 324px;
         font-size: 24px;
     }

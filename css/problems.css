@@ -57,9 +57,17 @@
     }
 }
 @media all and (min-width: 1920px) {
+    .wr-problem-image{
+        display: flex;
+    }
     .wr-problem-circle {
+        left: 0;
+        transform: translateX(0);
         width: 584px;
         height: 584px;
+    }
+    .wr-problem-image img{
+        margin-left: 279px;
     }
 }
 .wr-problems-common {
@@ -86,7 +94,9 @@
 }
 @media all and (min-width: 1920px) {
     .wr-problems-common{
+        display: flex;
         margin-top: 60px;
+        gap: 0;
     }
 }
 
@@ -126,6 +136,8 @@
 @media all and (min-width: 1920px) {
 .wr-problem-feedback {
     padding: 55px 65px 58px 59px;
+    max-width: 410px;
+    margin-left: 175px;
 }
 }
 
@@ -243,4 +255,33 @@
         right: 0;
         top: 0;
     }
+}
+
+.wr-problems-common form {
+    color: #1E3147;
+    font-family: "GeometriaRegular", sans-serif;
+    font-size: 13px;
+    display: grid;
+    gap: 10px;
+    margin-top: 42px;
+}
+.wr-problems-common form div{
+    display: flex;
+        align-items: center;
+}
+.wr-problems-common form div label{
+    text-align: start;
+}
+.wr-problems-common form span {
+    color: rgba(254, 209, 1, 1);
+    text-decoration: underline dotted;
+}
+.wr-problems-common form input{
+    border: none;
+    outline: none;
+    width: 14px;
+    height: 14px;
+    background-color: #F5F7F9;
+    border-radius: 3px;
+    margin-right: 7px;
 }
