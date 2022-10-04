@@ -291,6 +291,7 @@
 
 .wr-problem-feedback-container {
     position: relative;
+    height: fit-content;
 }
 
 .container-dots {

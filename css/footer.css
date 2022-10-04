@@ -30,13 +30,13 @@
     .wr-footer .container-custom .wr-footer-container{
         display: flex;
         align-items: center;
+        margin-bottom: 24px;
     }
 }
 @media all and (min-width: 1200px) {
     .wr-footer .container-custom {
         display: flex;
         flex-direction: column;
-        gap: 24px;
     }
 }
 @media all and (min-width: 1920px) {
@@ -151,12 +151,14 @@
 .contacts {
     background-color: #fff;
     border-radius: 50px;
-    gap: 15px;
     display: flex;
     margin: 0 auto;
     text-decoration: none;
     padding: 8px 17px 7px 11px;
     max-width: fit-content;
+}
+.contacts img {
+    margin-right: 15px;
 }
 @media all and (min-width: 576px) {
     .contacts {
@@ -171,10 +173,9 @@
 }
 @media all and (min-width: 1920px) {
     .contacts {
-        gap: 15px;
         display: flex;
         margin-left: 64px;
-
+        margin-right: 46px;
     }
 }
 @media all and (min-width: 768px) {
@@ -200,9 +201,11 @@
 
 .mail {
     justify-content: center;
-    gap: 10px;
     display: flex;
     margin-top: 30px;
+}
+.mail img {
+    margin-right: 10px;
 }
 @media all and (min-width: 576px) {
     .mail {
@@ -275,7 +278,6 @@ text-decoration: none;
         display: flex;
         align-items: center;
         margin: 0;
-        gap: 46px;
     }
 }
 @media all and (min-width: 1200px) {
@@ -302,10 +304,12 @@ text-decoration: none;
 .desktop-footer-text, .wr-footer-desktop-mail {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 .wr-footer-desktop-mail {
     margin-right: 110px;
+}
+.wr-footer-desktop-mail img{
+    margin-right: 10px;
 }
 
 .desktop-footer-text {
