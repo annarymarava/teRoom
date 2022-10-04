@@ -135,14 +135,13 @@
 }
 @media all and (min-width: 1920px) {
 .wr-problem-feedback {
-    padding: 55px 65px 58px 59px;
+    padding: 55px 65px 38px 59px;
     max-width: 410px;
     margin-left: 175px;
 }
 }
 
 .wr-problem-feedback h4{
-    margin-top: 55px;
     font-family: "GeometriaMedium", sans-serif;
     font-size: 24px;
     line-height: 100%;
@@ -242,7 +241,12 @@
     background-color: #F9D208;
     bottom: 0;
     left: 0;
-    transform: translate(-33%, 33%);
+    transform: translate(-30%, 70%);
+}
+@media all and (min-width: 768px) {
+    .wr-problem-circle-icon{
+        transform: translate(-33%, 33%);
+    }
 }
 
 .wr-problem-right-border {
@@ -257,7 +261,7 @@
     }
 }
 
-.wr-problems-common form {
+.wr-problems-common .form {
     color: #1E3147;
     font-family: "GeometriaRegular", sans-serif;
     font-size: 13px;
@@ -265,23 +269,46 @@
     gap: 10px;
     margin-top: 42px;
 }
-.wr-problems-common form div{
-    display: flex;
-        align-items: center;
+.wr-problems-common .form .container-checkbox{
+    display: grid;
+    grid-template-columns: 14px 1fr;
+    gap: 9px;
 }
-.wr-problems-common form div label{
+.wr-problems-common .form div label{
     text-align: start;
 }
-.wr-problems-common form span {
+.wr-problems-common .form span {
     color: rgba(254, 209, 1, 1);
     text-decoration: underline dotted;
 }
-.wr-problems-common form input{
-    border: none;
-    outline: none;
+.wr-problems-common .form .checkbox{
     width: 14px;
     height: 14px;
     background-color: #F5F7F9;
     border-radius: 3px;
     margin-right: 7px;
+}
+
+.wr-problem-feedback-container {
+    position: relative;
+}
+
+.container-dots {
+    display: none;
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+
+}
+@media all and (min-width: 576px) {
+    .container-dots{
+        display: block;
+        bottom: -71px;
+    }
+}
+@media all and (min-width: 768px) {
+    .container-dots{
+        bottom: 16px;
+
+    }
 }

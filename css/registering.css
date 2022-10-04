@@ -192,6 +192,9 @@
 .wr-registering-fields button:hover {
     box-shadow: 0px 10px 15px -6px rgba(249, 210, 8, 0.5);
 }
+.wr-registering-fields button:active {
+    box-shadow: none;
+}
 @media all and (min-width: 576px) {
     .wr-registering-fields button{
         padding: 18px 16px;

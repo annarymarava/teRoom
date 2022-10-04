@@ -42,15 +42,6 @@ input {
   outline: none;
 }
 
-input[type="checkbox"] {
- outline: none;
-  border: none;
-}
-
-input[type="checkbox"]:checked {
-  background-color: #33A1FB;
-}
-
 .wr-problems-common input::placeholder, textarea::placeholder {
   font-family: 'GeometriaMedium', sans-serif;
   font-size: 12px;
@@ -122,6 +113,10 @@ input[type="checkbox"]:checked {
 
 button:hover.blue-shadow,  button:hover.dark-shadow {
   background: linear-gradient(90.11deg, #33A1FB 1.25%, #0664B1 99.92%);
+}
+
+button:active.blue-shadow,  button:active.dark-shadow {
+  background: #33A1FB;
 }
 
 .common-btn-md {
@@ -281,3 +276,29 @@ button:hover.blue-shadow,  button:hover.dark-shadow {
     padding: 26px 0 67px;
   }
 }
+.checkbox {
+  opacity: 0;
+}
+.checkbox-custom {
+  width: 14px;
+  height: 14px;
+  background-color: #F5F7F9;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.container-checkbox.checked  .checkbox-custom {
+  background-image: url("../media/tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wr-problems-common .container-checkbox.checked  .checkbox-custom {
+  background-image: url("../media/tick_white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #33A1FB;
+}
+.container-checkbox {
+  position: relative;
+}
+

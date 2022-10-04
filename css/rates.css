@@ -203,6 +203,16 @@
     display: inline-flex;
     flex-direction: column;
 }
+.rates-free-image ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.rates-free-image ul li {
+   margin: 0;
+    width: 100%;
+}
 .wr-rates-kinds.inactive  .rates-price {
     display: none;
 }

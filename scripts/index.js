@@ -86,15 +86,36 @@ tabsMobile.addEventListener('click', (e)=> {
 
 // questions
 const elementQuestion = document.getElementById('wr-questions-items');
-const wrapperArrayAnswer = elementQuestion.getElementsByClassName('wr-questions-item-wrapper');
+elementQuestion.style.maxHeight= elementQuestion.offsetHeight+ 'px';
+window.addEventListener('resize', ()=> {
+    elementQuestion.style = null
+    elementQuestion.style.maxHeight= elementQuestion.offsetHeight+ 'px';
+})
+
+const wrapperArrayAnswer = elementQuestion.getElementsByClassName('wr-questions-item-full');
 elementQuestion.addEventListener('click', (e)=> {
-    if(e.target.closest(".wr-questions-item-wrapper")) {
+    if(e.target.closest(".wr-questions-item-full")) {
         for (let i = 0; i < wrapperArrayAnswer.length; i++) {
             if(wrapperArrayAnswer[i].classList.contains('active')){
                 wrapperArrayAnswer[i].classList.remove('active')
+                e.target.closest(".wr-questions-item-full").classList.add('active')
             }
         }
-        e.target.closest(".wr-questions-item-wrapper").classList.add('active')
+
 
     }
 })
+// checkbox custom
+const checkboxes = document.getElementsByClassName('checkbox')
+for (let i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].addEventListener('change', ()=> {
+        console.log(checkboxes[i])
+        if (checkboxes[i].checked){
+            checkboxes[i].closest('.container-checkbox').classList.add('checked')
+        } else {
+            checkboxes[i].closest('.container-checkbox').classList.remove('checked')
+
+        }
+
+    })
+}
