@@ -87,7 +87,7 @@
     font-size: 14px;
     line-height: 18px;
     border-radius: 8px;
-    width: 290px;
+    width: 100%;
 }
 @media all and (min-width: 576px) {
     .using-mobile {
