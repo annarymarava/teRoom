@@ -41,7 +41,7 @@
 .wr-rates-common {
     background-color: #F8F9FC;
     border-radius: 75px;
-    padding: 78px 15px 300px 15px;
+    padding: 78px 15px 320px 15px;
     position: relative;
 }
 @media all and (min-width: 576px) {
@@ -236,12 +236,16 @@
 }
 .rates-free h4{
     font-family: "GeometriaMedium", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 0.01em;
     color: #1E3147;
     margin-top: 24px;
-    padding: 5px 0;
-    min-width: 196px;
+}
+@media all and (min-width: 360px) {
+    .rates-free h4{
+        font-size: 20px;
+        min-width: 196px;
+    }
 }
 .rates-price{
     font-family: "GeometriaBold", sans-serif;
