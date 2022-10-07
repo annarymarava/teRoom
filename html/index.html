@@ -100,7 +100,10 @@
                     события, храните данные и согласовывайте с заказчиком.</p>
                 <a href="" class="home-play">
                     <p>Короткое демо</p>
-                     <img alt="" src="../media/preview/play.svg"/>
+                    <svg width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.9 11.5001C0.9 17.3545 5.64565 22.1002 11.5001 22.1002C17.3545 22.1002 22.1002 17.3545 22.1002 11.5001C22.1002 5.64564 17.3545 0.9 11.5001 0.9C5.64565 0.9 0.9 5.64564 0.9 11.5001ZM2.24227 11.5001C2.24227 6.4151 6.4151 2.24226 11.5001 2.24226C16.5854 2.24226 20.7579 6.37147 20.7579 11.5001C20.7579 16.5851 16.5851 20.7579 11.5001 20.7579C6.4151 20.7579 2.24227 16.5851 2.24227 11.5001Z" stroke-width="0.2"/>
+                        <path d="M8.28086 16.9043V17.0779L8.43104 16.9908L17.7449 11.587L17.8934 11.5008L17.7452 11.4142L8.43135 5.96642L8.28086 5.87839V6.05273V16.9043ZM9.711 8.38066L14.9929 11.4999L9.711 14.5775V8.38066Z" stroke-width="0.2"/>
+                    </svg>
                 </a>
                 <div class="wr-home-btn">
                     <button class="underline-btn">Подробнее о ТеRoom</button>
@@ -238,39 +241,39 @@
 
 </section>
 <section class="wr-registering">
+    <form id="registering1">
     <div class="container-custom">
         <div class="wr-registering-title">
             <div class="dashed-circle wr-registering-dashed-circle-small"></div>
             <div class="dashed-circle wr-registering-dashed-circle-big"></div>
             <h3>Заинтересовались? Присоединяйтесь!</h3>
             <p>Регистрируйтесь и получайте 1 проект бесплатно!</p>
-            <form class="wr-registering-fields">
-                <input placeholder="Ваше имя">
-                <input placeholder="Ваш e-mail">
+            <div class="wr-registering-fields">
+                <input class="registering-field" placeholder="Ваше имя">
+                <input class="registering-field" placeholder="Ваш e-mail">
                 <button type="submit">Регистрация</button>
-            </form>
+            </div>
             <div class="wr-registering-room">
                  <img alt="" src="../media/registering/room.png">
             </div>
             <div class="wr-registering-checkbox">
-                <form>
                     <div class="container-checkbox">
                         <div class="checkbox-custom"></div>
-                        <input type="checkbox" class="checkbox" id="agree3">
+                        <input type="checkbox" class="checkbox" id="agree3" required>
                         <label for="agree3">Я согласен получать рассылки «TeRoom».</label>
                     </div>
                     <div class="container-checkbox">
                         <div class="checkbox-custom"></div>
-                        <input type="checkbox" class="checkbox" id="agree4">
+                        <input type="checkbox" class="checkbox" id="agree4" required>
                         <label for="agree4">Я согласен на
-                            <span>обработку персональных данных</span> в соответствии с
-                            <span>политикой «TeRoom».</span>
+                            <a href="" target="_blank">обработку персональных данных</a> в соответствии с
+                            <a href="" target="_blank">политикой «TeRoom».</a>
                         </label>
                     </div>
-                </form>
             </div>
         </div>
     </div>
+    </form>
 </section>
 <div class="wr-common-bg">
     <section class="wr-platform">
@@ -947,40 +950,41 @@
         </div>
     </section>
     <section class="wr-registering">
-    <div class="container-custom">
-        <div class="wr-registering-title">
-            <div class="dashed-circle wr-registering-dashed-circle-small"></div>
-            <div class="dashed-circle wr-registering-dashed-circle-big"></div>
-            <h3>Заинтересовались? Присоединяйтесь!</h3>
-            <p>Регистрируйтесь и получайте 1 проект бесплатно!</p>
-            <form class="wr-registering-fields">
-                <input placeholder="Ваше имя">
-                <input placeholder="Ваш e-mail">
-                <button type="submit">Регистрация</button>
-            </form>
-            <div class="wr-registering-room">
-                 <img alt="" src="../media/registering/room.png">
-            </div>
-            <div class="wr-registering-checkbox">
-                <form>
-                    <div class="container-checkbox">
-                        <div class="checkbox-custom"></div>
-                        <input type="checkbox" class="checkbox" id="agree5">
-                        <label for="agree5">Я согласен получать рассылки «TeRoom».</label>
+        <form id="registering2">
+            <div class="container-custom">
+                <div class="wr-registering-title">
+                    <div class="dashed-circle wr-registering-dashed-circle-small"></div>
+                    <div class="dashed-circle wr-registering-dashed-circle-big"></div>
+                    <h3>Заинтересовались? Присоединяйтесь!</h3>
+                    <p>Регистрируйтесь и получайте 1 проект бесплатно!</p>
+                    <div class="wr-registering-fields">
+                        <input class="registering-field" placeholder="Ваше имя">
+                        <input class="registering-field" placeholder="Ваш e-mail">
+                        <button type="submit">Регистрация</button>
                     </div>
-                    <div class="container-checkbox">
-                        <div class="checkbox-custom"></div>
-                        <input type="checkbox" class="checkbox" id="agree6">
-                        <label for="agree6">Я согласен на
-                        <span>обработку персональных данных</span> в соответствии с
-                        <span>политикой «TeRoom».</span>
-                        </label>
+                    <div class="wr-registering-room">
+                        <img alt="" src="../media/registering/room.png">
                     </div>
-                </form>
+                    <div class="wr-registering-checkbox">
+                        <div class="container-checkbox">
+                            <div class="checkbox-custom"></div>
+                            <input type="checkbox" class="checkbox" id="agree3" required>
+                            <label for="agree3">Я согласен получать рассылки «TeRoom».</label>
+                        </div>
+                        <div class="container-checkbox">
+                            <div class="checkbox-custom"></div>
+                            <input type="checkbox" class="checkbox" id="agree4" required>
+                            <label for="agree4">Я согласен на
+                                <a href="" target="_blank">обработку персональных данных</a> в соответствии с
+                                <a href="" target="_blank">политикой «TeRoom».</a>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </form>
+    </section>
+
     <section class="wr-review">
         <h2>Отзывы</h2>
         <div class="swiper mySwiper">
@@ -1215,22 +1219,22 @@
 
                 <h4>Напишите нам</h4>
                 <p>Специалист ответит в течение 1 рабочего дня.</p>
-                <form>
+                <form id="feedbackSubmit">
                 <div class="wr-problem-feedback-data">
                     <input class="data-feedback" placeholder="Ваше имя" />
                     <input class="data-feedback" placeholder="Ваш e-mail" />
                     <textarea class="feedback-data-description" rows="4" placeholder="Опишите проблему"></textarea>
                 </div>
-                <button type="submit" class="common-btn-md dark-shadow">Отправить</button>
+                <button type="submit"  class="common-btn-md dark-shadow">Отправить</button>
                 <div class="form">
                     <div class="container-checkbox">
                         <div class="checkbox-custom"></div>
-                        <input type="checkbox" class="checkbox" id="agree" />
+                        <input type="checkbox" class="checkbox" id="agree" required/>
                         <label for="agree">Я согласен получать рассылки «TeRoom».</label>
                     </div>
                     <div class="container-checkbox">
                         <div class="checkbox-custom"></div>
-                        <input type="checkbox" class="checkbox" id="agree2" />
+                        <input type="checkbox" class="checkbox" id="agree2" required/>
                         <label for="agree2">Я согласен на
                             <span>обработку персональных данных</span> в соответствии с
                             <span>политикой «TeRoom».</span>

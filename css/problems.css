@@ -22,6 +22,7 @@
 @media all and (min-width: 1920px) {
     .wr-problems{
         margin-top: 180px;
+        padding-bottom: 130px;
     }
 }
 .wr-problems h2{
@@ -163,12 +164,15 @@
     font-size: 12px;
     letter-spacing: 0.01em;
     color: #99A3C5;
-    border: none;
+    border: 1px solid transparent;
     outline: none;
     padding: 12px 16px 12px 24px;
     background-color: #F5F7F9;
     border-radius: 10px;
     resize: none
+}
+.wr-problem-feedback-data input:invalid {
+    border: 1px solid red;
 }
 .wr-problem-feedback-data {
     display: grid;
@@ -311,5 +315,10 @@
     .container-dots{
         bottom: 16px;
 
+    }
+}
+@media all and (min-width: 1920px) {
+    .container-dots{
+        bottom: -72px;
     }
 }

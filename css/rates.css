@@ -1,6 +1,11 @@
 .wr-rates{
-    margin-top: 180px;
+    margin-top: 130px;
     background-color: #F8F9FC;
+}
+@media all and (min-width: 1920px) {
+    .wr-rates {
+        margin-top: 180px;
+    }
 }
 .wr-rates .container-custom{
    padding: 0;
@@ -72,9 +77,6 @@
     flex-direction: column;
     padding: 10px 0 46px;
 }
-.wr-rates-select label{
-    margin-right: 17px;
-}
 @media all and (min-width: 576px) {
     .wr-rates-select{
         flex-direction: row;
@@ -82,6 +84,9 @@
     }
     .wr-rates-select label{
         margin-right: 20px;
+    }
+    .wr-rates-select select {
+        margin-top: 0;
     }
 }
 @media all and (min-width: 768px) {
@@ -110,6 +115,7 @@
     background-position-x: calc(100% - 20px);
     background-position-y: 50%;
     background-repeat: no-repeat;
+    margin-top: 17px;
 }
 
 .wr-rates-select select option{
@@ -125,6 +131,22 @@
 }
 .wr-rates-columns{
     display: flex;
+}
+@media all and (min-width: 768px) {
+    .wr-rates-columns {
+        max-width: 570px;
+        margin: 0 auto;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-rates-columns {
+        max-width: 923px;
+    }
+}
+@media all and (min-width: 1500px) {
+    .wr-rates-columns {
+        margin: 0 auto;
+    }
 }
 .rates-title{
     font-family: "GeometriaBold", sans-serif;
@@ -152,7 +174,7 @@
 .wr-rates-kinds {
     display: none;
 }
-@media all and (min-width: 1920px) {
+@media all and (min-width: 1500px) {
     .wr-rates-kinds {
         display: block;
     }
@@ -166,7 +188,7 @@
         padding: 15px 15px 50px 0;
     }
 }
-@media all and (min-width: 1920px) {
+@media all and (min-width: 1500px) {
     .wr-rates-kinds.ratesSlider {
         display: none;
     }
@@ -289,7 +311,7 @@
 .rates-kinds-list{
     display: flex;
 }
-@media all and (min-width: 1920px) {
+@media all and (min-width: 1500px) {
     .rates-kinds-list li{
         margin-right: 30px;
     }
@@ -420,6 +442,12 @@
 }
 .rates-free:hover {
     border: 2px solid #FED56D;
+}
+.rates-free:nth-child(1):before {
+    content: none;
+}
+.rates-free:nth-child(1):hover:before {
+    content: none;
 }
 .rates-free:hover:before{
     position: absolute;

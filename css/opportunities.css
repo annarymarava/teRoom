@@ -74,7 +74,7 @@
     fill: #157ED4;
 }
 .wr-opportunities-projects {
-    flex-direction: column;
+    flex-direction: column-reverse;
     display: none;
 }
 .wr-opportunities-projects.active {

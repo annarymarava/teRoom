@@ -108,6 +108,9 @@
         margin-top: 16px;
     }
 }
+.wr-registering-fields input:invalid {
+    border: 1px solid red;
+}
 
 .wr-registering-fields input{
     font-family: "GeometriaMedium", sans-serif;
@@ -116,9 +119,9 @@
     padding: 15px 7px;
     border-radius: 10px;
     background: #F8F9FC;
-    border: none;
     color: #99A3C5;
     margin-bottom: 26px;
+    border: 1px solid transparent;
 }
 @media all and (min-width: 576px) {
     .wr-registering-fields input{
@@ -138,18 +141,6 @@
     .wr-registering-fields input{
         min-width: 120px;
         width: auto;
-    }
-}
-@media all and (min-width: 1600px) {
-    .wr-registering-fields input{
-        min-width: 180px;
-    }
-}
-
-@media all and (min-width: 1920px) {
-    .wr-registering-fields input{
-        font-size: 18px;
-        padding: 18px 12px;
         max-width: 230px;
     }
 }
@@ -177,6 +168,11 @@
     .wr-registering-fields{
         margin-top: 52px;
     }
+    .wr-registering-fields input {
+        font-size: 18px;
+        padding: 18px 12px;
+
+    }
 }
 .wr-registering-fields button{
     font-family: "GeometriaBold", sans-serif;
@@ -197,7 +193,7 @@
 }
 @media all and (min-width: 576px) {
     .wr-registering-fields button{
-        padding: 18px 16px;
+        padding: 18px 30px;
     }
 }
 .wr-registering-room img{
@@ -213,7 +209,7 @@
         transform: translateY(-50%);
         right: -32px;
         display: block;
-        max-width: 410px;
+        max-width: 360px;
     }
 }
 @media all and (min-width: 1920px) {
@@ -221,10 +217,9 @@
         max-width: 534px;
     }
 }
+
 .wr-registering-checkbox {
-   margin-top: 32px;
-}
-.wr-registering-checkbox form {
+    margin-top: 32px;
     color: #ffffff;
     font-family: "GeometriaRegular", sans-serif;
     font-size: 13px;
@@ -232,9 +227,14 @@
     gap: 10px;
 }
 
-.wr-registering-checkbox span {
+.wr-registering-checkbox a {
     color: rgba(254, 209, 1, 1);
-    text-decoration: underline dotted;
+    border-bottom: 1px dashed rgba(254, 209, 1, 1);
+    text-decoration: none;
+}
+.wr-registering-checkbox a:hover {
+    color: #1E3147;
+    border-bottom: 1px dashed #1E3147;
 }
 .wr-registering-checkbox input{
     border: none;

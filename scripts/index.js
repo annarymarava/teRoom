@@ -109,7 +109,6 @@ elementQuestion.addEventListener('click', (e)=> {
 const checkboxes = document.getElementsByClassName('checkbox')
 for (let i = 0; i < checkboxes.length; i++) {
     checkboxes[i].addEventListener('change', ()=> {
-        console.log(checkboxes[i])
         if (checkboxes[i].checked){
             checkboxes[i].closest('.container-checkbox').classList.add('checked')
         } else {
@@ -119,3 +118,46 @@ for (let i = 0; i < checkboxes.length; i++) {
 
     })
 }
+//validation
+const feedbackSubmit = document.getElementById('feedbackSubmit')
+const dataFeedback = document.getElementsByClassName('data-feedback')
+feedbackSubmit.addEventListener('submit', (evt)=> {
+    evt.preventDefault();
+    const resultError = []
+    for (let i = 0; i < dataFeedback.length; i++) {
+        if(dataFeedback[i].value === ''){
+            dataFeedback[i].setAttribute('required', true)
+            resultError.push('1')
+        }
+    }
+    resultError.length === 0 && feedbackSubmit.submit()
+})
+
+
+const registering1 = document.getElementById('registering1')
+const dataRegistering1 = registering1.getElementsByClassName('registering-field')
+registering1.addEventListener('submit', (evt)=> {
+    evt.preventDefault();
+    const resultError = []
+    for (let i = 0; i < dataRegistering1.length; i++) {
+        if(dataRegistering1[i].value === ''){
+            dataRegistering1[i].setAttribute('required', true)
+            resultError.push('1')
+        }
+    }
+    resultError.length === 0 && feedbackSubmit.submit()
+})
+
+const registering2 = document.getElementById('registering2')
+const dataRegistering2 = registering2.getElementsByClassName('registering-field')
+registering2.addEventListener('submit', (evt)=> {
+    evt.preventDefault();
+    const resultError = []
+    for (let i = 0; i < dataRegistering2.length; i++) {
+        if(dataRegistering2[i].value === ''){
+            dataRegistering2[i].setAttribute('required', true)
+            resultError.push('1')
+        }
+    }
+    resultError.length === 0 && registering2.submit()
+})

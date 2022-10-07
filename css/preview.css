@@ -99,13 +99,15 @@ header {
   width: 100%;
   margin-top: 44px;
 }
-.wr-home-mobile .wr-home-btn button:nth-child(1){
-  margin-bottom: 20px;
-}
+
 .wr-home-mobile .wr-home-btn button{
   font-size: 18px;
   width: 100%;
   padding: 13px 0;
+}
+.wr-home-mobile .wr-home-btn button:nth-child(1){
+  margin-bottom: 20px;
+  padding: 10px 0;
 }
 @media all and (min-width: 576px) {
   .wr-home-text .home-describe {
@@ -263,6 +265,16 @@ header {
   align-items: center;
   margin-top: 30px;
   text-decoration: none;
+}
+.home-play svg{
+  fill: #33A1FB;
+}
+.home-play:hover p{
+  color: #1E3147;
+  border-bottom: 1px dashed #1E3147;
+}
+.home-play:hover svg{
+  fill: #1E3147;
 }
 .home-play p {
   font-family: 'GeometriaMedium',sans-serif;
