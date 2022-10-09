@@ -21,6 +21,7 @@ h1, h1, h3, h4, h5{
 }
 body {
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 img {
@@ -38,31 +39,72 @@ input {
   outline: none;
 }
 
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+input::placeholder {
+  font-family: 'GeometriaMedium', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #99A3C5;
+}
+
 * {
   margin: 0;
   padding: 0;
+
 }
 
 .container-custom {
-  max-width: 1460px;
+  padding: 0 15px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
+
+@media all and (min-width: 576px) {
+  .container-custom {
+    padding: 0 36px;
+
+  }
+}
+
+@media all and (min-width: 768px) {
+  .container-custom {
+    padding: 0 39px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container-custom {
+    padding: 0 45px;
+
+  }
+}
+@media all and (min-width: 1920px) {
+  .container-custom {
+    max-width: 1460px;
+  }
+}
+
 .container-title-custom {
   width: 100%;
-  margin: 0 auto;
-  padding-top: 110px;
-  padding-bottom: 90px;
   text-align: center;
 }
 
 .container-title-custom h2 {
   font-family: 'GeometriaBold', sans-serif;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 40px;
+  line-height: 50px;
   text-align: center;
   color: #1E3147;
 }
+@media all and (min-width: 1920px) {
+  .container-title-custom h2  {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
 
 
 .common-btn-md {
@@ -78,20 +120,28 @@ input {
   text-align: center;
   outline: none;
   border: none;
+  white-space: nowrap;
 }
 .common-btn-lg {
   background-color: #33A1FB;
   box-shadow: 0px 10px 15px -6px rgba(51, 161, 251, 0.5);
   border-radius: 29px;
-  font-family: "GeometriaRegular", sans-serif ;
+  font-family: "GeometriaBold", sans-serif ;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
-  padding: 18px 28px;
+  padding: 13px 27px;
   color: #fff;
   text-align: center;
   outline: none;
-  border: none;
+  border: 3px solid #33A1FB;
+  white-space: nowrap;
+}
+@media all and (min-width: 1920px) {
+  .common-btn-lg{
+    font-size: 20px;
+    padding: 18px 28px;
+  }
 }
 
 .underline-btn {
@@ -100,13 +150,18 @@ input {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  padding: 2px 0;
   color: #33A1FB;
-  border-bottom: 1px dashed #33A1FB;
-  border-left: none;
-  border-top: none;
-  border-right: none;
+  border: 3px solid #33A1FB;
+  border-radius: 29px;
   outline: none;
+  padding: 13px 27px;
+  white-space: nowrap;
+}
+@media all and (min-width: 1920px) {
+  .underline-btn{
+    font-size: 20px;
+    padding: 18px 32px 18px 20px;
+  }
 }
 
 .dashed-circle {

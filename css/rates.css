@@ -72,7 +72,24 @@
     display: inline-flex;
     flex-direction: column;
 }
-
+.wr-rates-kinds.inactive  .rates-price {
+    display: none;
+}
+.wr-rates-kinds.inactive  .rates-price {
+    display: none;
+}
+.wr-rates-kinds.inactive  .rates-price-year {
+    display: block;
+}
+.wr-rates-kinds.inactive .rates-oldprice {
+    color: white;
+}
+.wr-rates-kinds.inactive  ul li {
+    border: 2px solid #ffffff;
+}
+.wr-rates-kinds.inactive  ul li::before {
+    display: none;
+}
 .wr-rates-kinds ul{
     text-align: center;
 }
@@ -92,6 +109,15 @@
     color: #33A1FB;
     margin-top: 27px;
     padding: 4px;
+}
+.rates-price-year {
+    font-family: "GeometriaBold", sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.01em;
+    color: #33A1FB;
+    margin-top: 27px;
+    padding: 4px;
+    display: none;
 }
 .rates-time{
     font-family: "GeometriaRegular", sans-serif;

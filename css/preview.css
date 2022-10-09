@@ -18,6 +18,16 @@ header {
   gap: 30px;
 }
 
+.header-list-substrate {
+  display: none;
+}
+@media all and (min-width: 1200px) {
+  .header-list-substrate {
+    display: block;
+  }
+}
+
+
 .header-link {
   font-family: 'GeometriaRegular', sans-serif;
   font-size: 16px;
@@ -29,78 +39,203 @@ header {
 
 .wr-home {
   position: relative;
-  padding: 160px 0;
+  padding: 70px 0;
   display: flex;
-  gap: 315px;
+  flex-direction: column;
+  gap: 46px;
+}
+@media all and (min-width: 1200px) {
+  .wr-home {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
+@media all and (min-width: 1920px) {
+  .wr-home {
+    gap: 315px;
+  }
+}
 .home-title {
   font-family: 'GeometriaBold', sans-serif;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 30px;
+  line-height: 38px;
   color: #1E3147;
+}
+@media all and (min-width: 576px) {
+  .home-title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .home-title {
+    font-size: 48px;
+    line-height: 60px;
+  }
 }
 .home-describe {
   font-family: 'GeometriaRegular', sans-serif;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 23px;
   color: #1E3147;
   margin-top: 30px;
 }
-
-.wr-home-text {
-  max-width: 560px;
+@media all and (min-width: 1920px) {
+  .home-describe {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
-.wr-home-btn {
-  margin-top: 100px;
+
+.wr-home-text .home-describe, .wr-home-text .wr-home-btn{
+  display: none;
+}
+.wr-home-mobile .home-describe{
+  display: block;
+}
+.wr-home-mobile .wr-home-btn {
   display: flex;
-  gap: 57px;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-top: 44px;
 }
+.wr-home-mobile .wr-home-btn button{
+  font-size: 18px;
+  width: 100%;
+  padding: 13px 0;
+}
+@media all and (min-width: 576px) {
+  .wr-home-text .home-describe {
+    display: block;
+  }
+  .wr-home-text  .wr-home-btn {
+    display: flex;
+    margin-top: 100px;
+    gap: 45px;
+    align-items: center;
+  }
+  .wr-home-mobile {
+    display: none;
+  }
+}
+@media all and (min-width: 1920px) {
+  .wr-home-text  .wr-home-btn {
+    gap: 57px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .wr-home-text {
+    max-width: 560px;
+  }
+}
+
 
 .wr-home-image {
   position: relative;
   width: 100%;
 }
 
-.wr-home-image img {
-  position: absolute;
-}
 .wr-home-image img:nth-child(1) {
- bottom: -1%;
-  right: -10%;
+ width: 100%;
 }
 .wr-home-image img:nth-child(2) {
-  top: 50%;
-  transform: translateY(-70%);
-  left: -20%;
-
+  position: absolute;
+  left: 10%;
 }
 .wr-home-image img:nth-child(3) {
-  top: -17%;
-  right: 12%;
-}
-.wr-home-image img:nth-child(4) {
-  right: 0;
-  top: -30%;
-}
-.wr-home-image img:nth-child(5) {
-top: -30%;
-}
-.wr-home-image img:nth-child(6) {
+  position: absolute;
   right: 0;
   top: 50%;
-  transform: translate(-70%, -70%);
+  transform: translateX(-100%);
 }
 
 .wr-home-image a {
-   transform: translate(-70%, -70%);
   position: absolute;
-  right: 43%;
-  top: 49%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
+.wr-burger-btn{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.wr-burger-btn button{
+  display: none;
 
+}
+@media all and (min-width: 576px) {
+  .wr-burger-btn button {
+    display: block;
+  }
+}
+.burger-button {
+  cursor: pointer;
+}
 
+@media all and (min-width: 1200px) {
+  .burger-button {
+    display: none;
+  }
+}
+
+.wr-mobile-nav {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  z-index: 10;
+  transition: 0.3s;
+}
+
+@media all and (min-width: 768px) {
+  .wr-mobile-nav button {
+    display: none;
+  }
+}
+.wr-mobile-nav.active {
+  transform: translateX(0);
+}
+
+.mobile-nav {
+  background-color: white;
+  width: 70%;
+  padding: 18px 22px 0 22px;
+  height: 100%;
+}
+
+.mobile-nav .nav-list {
+  flex-direction: column;
+  margin-bottom: 56px;
+}
+.mobile-nav .nav-list li a{
+  font-family: 'GeometriaBold', sans-serif;
+  font-size: 24px;
+  line-height: 12px;
+  color: #1E3147;
+  padding: 18px 0;
+}
+.mobile-nav .nav-list li:nth-child(1) a{
+  color: #33A1FB;
+}
+.wr-logo-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+@media all and (min-width: 576px) {
+  .wr-mobile-nav .common-btn-md {
+    display: none;
+  }
+}
 

@@ -1,70 +1,222 @@
 .wr-registering{
-    padding-top: 224px;
-    padding-bottom: 72px;
+    padding: 130px 0 0;
+}
+.wr-registering .container-custom{
+    padding: 0;
+}
+@media all and (min-width: 576px) {
+    .wr-registering .container-custom{
+        padding: 0 36px 0 50px;
+    }
+}
+@media all and (min-width: 768px) {
+    .wr-registering .container-custom{
+        padding: 0 36px 0 53px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-registering .container-custom{
+        padding: 0 42px 0 63px;
+    }
+}
+
+@media all and (min-width: 576px) {
+    .wr-registering{
+        padding-top: 174px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-registering{
+        padding-top: 224px;
+    }
 }
 .wr-registering-title{
     background: #33A1FB;
-    border-radius: 60px;
-    padding: 71px 74px 64px 74px;
+    padding: 47px 15px ;
     position: relative;
-    margin-right: 32px;
+    margin: 0 auto;
 }
-
+@media all and (min-width: 576px) {
+    .wr-registering-title{
+        padding: 47px 64px 61px 64px ;
+        border-radius: 40px;
+    }
+}
+@media all and (min-width: 768px) {
+    .wr-registering-title{
+        padding: 47px 30px 46px 30px ;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-registering-title{
+        padding: 47px 50px 46px 50px ;
+        border-radius: 60px;
+        max-width: 1096px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-registering-title {
+        border-radius: 60px;
+        padding: 71px 74px 64px 74px;
+        max-width: 1427px;
+    }
+}
 .wr-registering-title h3{
     font-family: 'GeometriaBold', sans-serif;
-    font-size: 40px;
-    text-align: left;
+    font-size: 24px;
+    text-align: center;
     color: #ffffff;
+}
+
+@media all and (min-width: 576px) {
+    .wr-registering-title h3{
+        font-size: 32px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-registering-title h3{
+        text-align: left;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-registering-title h3 {
+        font-size: 40px;
+    }
 }
 .wr-registering-title p{
     font-family: "GeometriaRegular", sans-serif;
-    font-size: 20px;
-    text-align: left;
+    font-size: 16px;
+    text-align: center;
     color: #ffffff;
-    margin-top: 16px;
+    margin-top: 20px;
+    line-height: 20px;
+    }
+@media all and (min-width: 576px) {
+    .wr-registering-title p{
+        font-size: 20px;
+        margin-top: 12px;
+        line-height: 25px;
+    }
 }
-.wr-registering-title input{
+@media all and (min-width: 1200px) {
+    .wr-registering-title p{
+        text-align: left;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-registering-title p{
+        margin-top: 16px;
+    }
+}
+
+.wr-registering-fields input{
     font-family: "GeometriaMedium", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
-    padding: 18px 12px;
-    margin-right: 20px;
+    padding: 15px 7px;
     border-radius: 10px;
     background: #F8F9FC;
     border: none;
     color: #99A3C5;
 }
-
-.wr-registering-title input::placeholder{
-    font-family: "GeometriaMedium", sans-serif;
-    font-size: 18px;
-    text-align: left;
-    color: #99A3C5;
+@media all and (min-width: 576px) {
+    .wr-registering-fields input{
+        padding: 15px 10px;
+    }
 }
+@media all and (min-width: 768px) {
+    .wr-registering-fields input{
+        padding: 15px 10px;
+        min-width: 140px;
+        width: 100%;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-registering-fields input{
+        min-width: 120px;
+        width: auto;
+    }
+}
+@media all and (min-width: 1600px) {
+    .wr-registering-fields input{
+        min-width: 180px;
+    }
+}
+
+@media all and (min-width: 1920px) {
+    .wr-registering-fields input{
+        font-size: 18px;
+        padding: 18px 12px;
+        max-width: 230px;
+    }
+}
+
 .wr-registering-fields{
-    margin-top: 52px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin: 30px 0;
+}
+
+@media all and (min-width: 768px) {
+    .wr-registering-fields{
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 30px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-registering-fields{
+        margin-top: 30px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-registering-fields{
+        margin-top: 52px;
+    }
 }
 .wr-registering-fields button{
     font-family: "GeometriaBold", sans-serif;
     background-color: #F9D208;
     border-radius: 10px;
     text-align: center;
-    padding: 18px;
+    padding: 14px 12px;
     color: #ffffff;
     border: none;
     font-size: 20px;
     line-height: 24px;
 }
+@media all and (min-width: 576px) {
+    .wr-registering-fields button{
+        padding: 14px 6px;
+    }
+}
+.wr-registering-room img{
+    width: 100%;
+}
 .wr-registering-room{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -60px;
+    display: none;
 }
-.wr-registering-checkbox{
-    margin-top: 29px;
+@media all and (min-width: 1200px) {
+    .wr-registering-room {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -32px;
+        display: block;
+        max-width: 410px;
+    }
 }
-.wr-registering-checkbox form{
+@media all and (min-width: 1920px) {
+    .wr-registering-room {
+        max-width: 534px;
+    }
+}
+.wr-registering-checkbox {
+   margin-top: 32px;
+}
+.wr-registering-checkbox form {
     color: #ffffff;
     font-family: "GeometriaRegular", sans-serif;
     font-size: 13px;
@@ -72,25 +224,65 @@
     flex-direction: column;
     gap: 10px;
 }
-.wr-registering-checkbox span{
+
+.wr-registering-checkbox span {
     color: rgba(254, 209, 1, 1);
     text-decoration: underline dotted;
 }
-.wr-registering-dashed-circle-big {
-    width: 122px;
-    height: 122px;
-    top: 0;
-    left: 0;
-    transform: translate(-33%, -33%);
-    z-index: -1;
+.wr-registering-checkbox input{
+    border: none;
+    outline: none;
+    width: 14px;
+    height: 14px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    margin-right: 7px;
 }
 
+.wr-registering-dashed-circle-big {
+  display: none;
+  width: 122px;
+  height: 122px;
+  top: 0;
+  left: 0;
+  transform: translate(-33%, -33%);
+   z-index: -1;
+ }
+@media all and (min-width: 576px) {
+    .wr-registering-dashed-circle-big{
+        display: block;
+        width: 94px;
+        height: 94px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-registering-dashed-circle-big{
+        width: 122px;
+        height: 122px;
+
+    }
+}
 .wr-registering-dashed-circle-small {
+    display: none;
     width: 69px;
     height: 69px;
     bottom: 0;
     right: 0;
-    transform: translate(105%, 20%);
     z-index: -1;
-
 }
+@media all and (min-width: 1200px) {
+    .wr-registering-dashed-circle-small{
+        width: 52px;
+        height: 52px;
+        transform: translate(72%, 0%);
+      display: block;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-registering-dashed-circle-small{
+        width: 69px;
+        height: 69px;
+        transform: translate(105%, 20%);
+    }
+}
+

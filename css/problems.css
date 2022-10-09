@@ -1,40 +1,101 @@
 .wr-problems{
-    margin-top: 180px;
+    margin-top: 130px;
+}
+@media all and (min-width: 576px) {
+    .wr-problems{
+        margin-top: 140px;
+
+    }
+}
+
+@media all and (min-width: 1920px) {
+    .wr-problems{
+        margin-top: 180px;
+    }
 }
 .wr-problems h2{
     font-family: "GeometriaBold", sans-serif;
     font-size: 48px;
     text-align: center;
     color: #1E3147;
+    line-height: 56px;
 }
+
 .wr-problem-image{
-    padding: 67px 175px 85px 396px;
-    position: relative;
+   display: none;
 }
-.wr-problem-circle {
-    width: 584px;
-    height: 584px;
-    border-radius: 50%;
-    background-color: #F8F9FC;
-    position: absolute;
-    z-index: -1;
-    left: 10%;
+@media all and (min-width: 1200px) {
+    .wr-problem-image{
+    display: block;
+    position: relative;
+        padding: 67px 143px 160px 45px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-problem-image{
+        padding: 67px 175px 85px 396px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-problem-circle {
+        width: 480px;
+        height: 480px;
+        border-radius: 50%;
+        background-color: #F8F9FC;
+        position: absolute;
+        z-index: -1;
+        left: 10%;
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-problem-circle {
+        width: 584px;
+        height: 584px;
+    }
 }
 .wr-problems-common{
     display: flex;
     position: relative;
 }
+
 .wr-problem-feedback {
     display: block;
     text-align: center;
-    margin-top: 99px;
+    margin: 71px auto 0;
     background: #FFFFFF;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    padding: 55px 65px 58px 59px;
+    padding: 43px 15px 34px ;
     position: relative;
     height: max-content;
     overflow: hidden;
+}
+@media all and (min-width: 576px) {
+    .wr-problem-feedback {
+        margin: 60px auto 0;
+        padding: 55px 54px 34px 60px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .wr-problem-feedback {
+        margin: 81px auto 0;
+        padding: 55px 60px 38px ;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .wr-problem-feedback {
+        margin: 81px 0 0 ;
+        padding: 55px 65px 38px 59px;
+
+    }
+}
+@media all and (min-width: 1920px) {
+.wr-problem-feedback {
+    margin: 99px 0 0;
+    padding: 55px 65px 58px 59px;
+}
 }
 
 .wr-problem-feedback h4{
@@ -85,12 +146,28 @@
     border: none;
     margin-top: 32px;
 }
-.wr-problem-feedback-image{
-    margin-right: 0;
-    right: 0;
-    position: absolute;
-    top: 50%;
+.wr-problem-feedback-image img{
+    max-width: 152px;
 }
+@media all and (min-width: 1920px) {
+    .wr-problem-feedback-image img{
+        min-width: 339px;
+    }
+}
+.wr-problem-feedback-image{
+    display: none;
+}
+@media all and (min-width: 768px) {
+    .wr-problem-feedback-image{
+    display: block;
+        margin-right: 0;
+        right: 0;
+        position: absolute;
+        top: 50%;
+
+    }
+}
+
 .wr-problem-plus-bold {
     width: 59px;
     height: 59px;

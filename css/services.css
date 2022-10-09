@@ -1,18 +1,137 @@
+.wr-services{
+    padding: 0 15px;
 
+}
+@media all and (min-width: 576px) {
+    .wr-services {
+        padding: 0 36px;
+
+    }
+}
+@media all and (min-width: 768px) {
+    .wr-services {
+        padding: 0 39px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .wr-services {
+        padding: 0 45px;
+
+    }
+}
+@media all and (min-width: 1920px) {
+    .wr-services {
+        max-width: 1460px;
+    }
+}
 .services {
     padding-top: 96px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.services h2{
+.services .container-title-custom h2{
     text-align: center;
+    font-size: 30px;
+    line-height: 38px;
+}
+@media all and (min-width: 576px) {
+    .services .container-title-custom h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+.services-logo img{
+    width: 100%;
 }
 .services-logo{
-    position: relative;
-    height: 628px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 66px;
+}
+@media all and (min-width: 576px) {
+    .services-logo {
+        max-width: 504px;
+        padding-bottom: 196px;
+    }
+}
+@media all and (min-width: 768px) {
+    .services-logo {
+        max-width: 690px;
+        padding-bottom: 184px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .services-logo {
+        max-width: 920px;
+        padding-bottom: 116px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .services-logo {
+        max-width: 1145px;
+        padding-bottom: 154px;
+    }
+}
+.services-logo img:nth-child(2) {
+    display: none;
+}
+@media all and (min-width: 576px) {
+    .services-logo img:nth-child(2) {
+        display: block;
+    }
+}
+@media all and (min-width: 576px) {
+    .services-logo img:nth-child(1) {
+        display: none;
+    }
+}
+.using-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 19px;
+    margin: 40px 0 50px;
+    background-color: #EBEFF2;
+    color: #788CA1;
+    font-family: 'GeometriaRegular', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 8px;
+    width: 290px;
+}
+@media all and (min-width: 576px) {
+    .using-mobile {
+        margin: 56px 0;
+        width: 504px;
+    }
+}
+@media all and (min-width: 768px) {
+    .using-mobile {
+        display: none;
+    }
 }
 .using{
-    display: flex;
-    justify-content: center;
+    display: none;
+    margin: 40px 0 50px;
+}
+@media all and (min-width: 768px) {
+    .using {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 70px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .using {
+        margin: 70px 0 90px;
+
+    }
+}
+@media all and (min-width: 1920px) {
+    .using {
+        margin: 90px 0 110px;
+    }
 }
 .using__before{
     padding: 13px 8px 12px 25px;
@@ -30,60 +149,4 @@
     background: #FFFFFF;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
     border-radius: 0 47px 47px 0 ;
-}
-.logo-teroom{
-    position: absolute;
-    left: 408px;
-    top: 260px;
-}
-.logo-telegram{
-    position: absolute;
-    left: 1257.02px;
-    top: 276px;
-}
-.logo-autocad{
-    position: absolute;
-    left: 775.23px;
-    top: 196px;
-}
-.logo-3dsmax{
-    position: absolute;
-    left: 1157.2px;
-    top: 110px;
-}
-.logo-cloud{
-    position: absolute;
-    left: 1037.26px;
-    top: 172px;
-}
-.logo-exel{
-    position: absolute;
-    left: 1342.57px;
-    top: 156px;
-}
-.logo-gmail{
-    position: absolute;
-    left: 1396.25px;
-    top: 408px;
-}
-.logo-lr{
-    position: absolute;
-    left: 925.7px;
-    top: 245px;
-}
-.logo-photoshop{
-    position: absolute;
-    left: 1048.16px;
-    top: 282px;
-}
-.logo-watsap{
-    position: absolute;
-    left: 895.5px;
-    top: 130px;
-}
-.logo-m\.word{
-    position: absolute;
-    left: 1434px;
-    top: 250px;
-
 }
